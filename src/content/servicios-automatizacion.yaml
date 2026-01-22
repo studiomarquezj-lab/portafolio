@@ -1,0 +1,83 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA DE SERVICIOS - AUTOMATIZACIÓN
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  title: "Automatización AI"
+  subtitle: "Multiplica la capacidad de tu equipo sin contratar más personal. Sistemas inteligentes que trabajan por ti 24/7."
+  cta: "Agendar diagnóstico especializado"
+  bg_image: "/images/service_automation_bg.png"
+
+# Sección de evaluación: ¿Realmente necesitas automatización?
+evaluation:
+  badge: "Antes de Empezar"
+  title: "¿Realmente necesitas automatización?"
+  subtitle: "No todo negocio necesita automatizar. Primero evaluamos si tiene sentido para ti. Honestidad brutal."
+  criteria_positive:
+    - "Recibes más de 30 leads al mes"
+    - "Tu equipo tarda más de 30 minutos en responder leads"
+    - "Pierdes leads porque no hay seguimiento consistente"
+    - "Tu ticket promedio justifica el costo de implementación"
+  criteria_negative:
+    - "Recibes menos de 10 leads al mes (no vale la pena)"
+    - "Tu proceso de venta es 100% presencial y no escalable"
+  disclaimer: "Si no encajas en al menos 3 de los criterios positivos, probablemente no necesitas esto todavía. Y te lo decimos de frente."
+  cta: "Evaluar mi caso gratis"
+
+# Flujo de automatización visual
+automation_flow:
+  title: "Así se ve tu máquina de ventas"
+  subtitle: "Del lead al cierre, sin que tu equipo toque nada hasta el momento crítico."
+  steps:
+    - step: "01"
+      title: "LEAD ENTRA"
+      description: "Formulario, WhatsApp o landing page"
+    - step: "02"
+      title: "VALIDACIÓN"
+      description: "Verificación de datos en tiempo real"
+    - step: "03"
+      title: "RESPUESTA"
+      description: "Mensaje automático en <2 minutos"
+    - step: "04"
+      title: "NUTRICIÓN"
+      description: "Secuencia de emails/SMS personalizados"
+    - step: "05"
+      title: "CALIFICACIÓN"
+      description: "Lead scoring basado en comportamiento"
+    - step: "06"
+      title: "HANDOFF"
+      description: "Solo leads calientes llegan a ventas"
+
+stats:
+  title: "El impacto de automatizar tu proceso de ventas"
+  items:
+    - value: "<5min"
+      label: "Tiempo de Respuesta"
+    - value: "+85%"
+      label: "Tasa de Contacto"
+    - value: "24/7"
+      label: "Disponibilidad"
+    - value: "0"
+      label: "Leads Perdidos"
+
+features:
+  title: "Sistemas que trabajan 24/7"
+  items:
+    - title: "Respuesta inmediata"
+      description: "Cuando un lead llega, recibe respuesta en minutos vía WhatsApp, Email o SMS. Automático. Sin que toques un botón."
+    - title: "Seguimiento sin manos"
+      description: "Secuencias que nutren al lead con información relevante. Recordatorios para citas. Tú solo hablas con los que están listos para comprar."
+    - title: "CRM optimizado"
+      description: "Configuramos tu CRM para que sepas exactamente dónde está cada lead en el proceso. Sin hojas de Excel obsoletas ni leads perdidos."
+    - title: "Integraciones totales"
+      description: "Conectamos tus anuncios, landing pages, WhatsApp y CRM. Todo hablando entre sí, sin que copies nada manualmente."
+    - title: "Calificación automática"
+      description: "Los leads se califican solos según su comportamiento. Tu equipo de ventas solo recibe los que valen la pena."
+    - title: "Reportes en tiempo real"
+      description: "Dashboard donde ves cuántos leads entraron, cuántos contestaron, cuántas citas se agendaron. Todo en un solo lugar."
+
+testimonial:
+  quote: "Antes perdíamos el 60% de los leads porque tardábamos horas en responder. Ahora el sistema responde en 2 minutos y mi equipo solo habla con gente interesada."
+  author: "María L."
+  role: "Directora Comercial"
+  company: "Agencia de Seguros"

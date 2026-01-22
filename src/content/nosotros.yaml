@@ -1,0 +1,93 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA NOSOTROS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  badge: "Quiénes Somos"
+  title: "Sobre Nosotros"
+  subtitle: "No somos la agencia más grande. Pero probablemente somos la que más se obsesiona con tus resultados."
+
+story:
+  title: "In Agencia nació de una frustración."
+  paragraphs:
+    - "Trabajé con agencias que me prometían la luna. Me mostraban métricas que no entendía y me decían 'el marketing es a largo plazo' cuando preguntaba por ventas."
+    - "Al final del mes, las ventas seguían igual. Decidí que si iba a hacer esto, lo haría diferente."
+    - "Sin humo. Sin promesas vacías. Resultados medibles o no hay trato."
+    - "Hoy In Agencia trabaja con negocios en USA, España y LATAM. No somos la agencia más grande, pero probablemente somos la que más se obsesiona con tus resultados."
+
+values:
+  badge: "Nuestros Valores"
+  title: "En qué creemos"
+  subtitle: "Principios que guían cada decisión y cada centavo que invertimos por ti."
+  items:
+    - icon: "🎯"
+      title: "Obsesión por Resultados"
+      description: "No medimos likes ni alcance. Medimos cuánto invertiste y cuánto generaste. Todo lo demás es ruido."
+    - icon: "🔬"
+      title: "Data-Driven"
+      description: "Las decisiones se toman con datos, no con opiniones. Probamos, medimos, iteramos. Sin ego."
+    - icon: "⚡"
+      title: "Velocidad de Ejecución"
+      description: "Revisamos campañas cada 48-72 horas. No esperamos a fin de mes para ver qué pasó."
+    - icon: "🤝"
+      title: "Partners, No Proveedores"
+      description: "Tu éxito es nuestro éxito. No cobramos por gestionar, ganamos cuando tú ganas."
+    - icon: "📊"
+      title: "Transparencia Total"
+      description: "Acceso completo a todas las métricas. Reportes claros. Sin jerga innecesaria."
+    - icon: "🚀"
+      title: "Mentalidad de Crecimiento"
+      description: "No nos conformamos con 'está funcionando'. Siempre buscamos el siguiente nivel."
+
+stats:
+  title: "Números que hablan"
+  subtitle: "La matemática no miente. Estos son los resultados que entregamos."
+  items:
+    - value: "+50"
+      label: "Clientes atendidos"
+      description: "En USA, LATAM y España"
+    - value: "150x"
+      label: "Mejor ROI"
+      description: "Caso documentado B2B"
+    - value: "$3M"
+      label: "Ventas generadas"
+      description: "En un solo funnel B2B"
+    - value: "8-12x"
+      label: "ROI Promedio"
+      description: "En campañas Meta/Google"
+
+team:
+  badge: "El Equipo"
+  title: "Las personas detrás de los resultados"
+  subtitle: "Un equipo pequeño pero enfocado. Cada miembro está obsesionado con una sola cosa: hacer que tu inversión en marketing sea rentable."
+  members:
+    - name: "Fundador & Estratega"
+      role: "CEO"
+      description: "Obsesionado con el ROI. Cada decisión pasa por el filtro de '¿esto genera dinero?'"
+      initial: "F"
+    - name: "Director de Performance"
+      role: "Head of Ads"
+      description: "Experto en Meta y Google Ads. Optimiza campañas cada 48 horas."
+      initial: "D"
+    - name: "Especialista en Automatización"
+      role: "Automation Lead"
+      description: "Construye máquinas de seguimiento de leads que trabajan 24/7."
+      initial: "E"
+    - name: "Director Creativo"
+      role: "Creative Director"
+      description: "Creativos que venden, no que ganan premios. Scroll-stoppers garantizados."
+      initial: "C"
+
+manifesto:
+  title: "Manifiesto IN"
+  principles:
+    - id: "01"
+      text: "El marketing existe para vender, no para ganar premios."
+    - id: "02"
+      text: "Un lead que no compra es solo un dato en una hoja de cálculo."
+    - id: "03"
+      text: "Los números no mienten. Las agencias sí."
+    - id: "04"
+      text: "Si no funciona, lo matamos y probamos otra cosa. Sin ego."
+    - id: "05"
+      text: "Preferimos un cliente feliz que diez clientes atrapados."

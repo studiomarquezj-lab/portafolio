@@ -1,0 +1,93 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DEL CASO DE ESTUDIO: SEGUROS USA
+# ═══════════════════════════════════════════════════════════════════════════════
+
+meta:
+  tag: "Lead Gen • Seguros USA"
+  title: "Leads que sí contestan el teléfono"
+  subtitle: "Agencia de seguros en Miami luchaba con leads que nunca respondían. Implementamos un sistema de filtrado y respuesta inmediata que transformó sus resultados."
+
+metrics:
+  - value: "+60%"
+    label: "CONTACTABILIDAD"
+    sublabel: "leads que contestan"
+  - value: "-40%"
+    label: "COSTO POR LEAD"
+    sublabel: "reducción"
+  - value: "3x"
+    label: "ROI"
+    sublabel: "sobre inversión"
+  - value: "120"
+    label: "DÍAS"
+    sublabel: "para resultados"
+
+challenge:
+  title: "El Problema"
+  paragraphs:
+    - "Una agencia de seguros en Miami generaba 200+ leads mensuales a través de Facebook Ads (auto, vida, salud), pero solo el 15% contestaba cuando los agentes llamaban."
+    - "El equipo de ventas pasaba el 85% de su tiempo dejando mensajes de voz y persiguiendo leads que habían perdido interés. Cada lead costaba $45 y la mayoría se desperdiciaba."
+    - "Estaban quemando $9,000/mes en leads que nunca convertían."
+  
+  pain_points:
+    title: "Dolores Principales"
+    items:
+      - "Leads que nunca contestaban el teléfono"
+      - "Agentes perdiendo tiempo con datos incorrectos"
+      - "Competencia feroz en el mercado de seguros USA"
+      - "Costo por lead de $45 (insostenible)"
+
+solutions:
+  title: "Nuestra Solución"
+  subtitle: "Un sistema de 4 capas que filtró el ruido y entregó leads calientes al equipo de ventas."
+  items:
+    - title: "LEAD SCORING AVANZADO"
+      description: "Implementamos un sistema de puntuación en tiempo real que descartaba leads de baja intención antes de llegar al equipo de ventas."
+    - title: "VALIDACIÓN INSTANTÁNEA"
+      description: "Integración con bases de datos para verificar números de teléfono y emails en el momento del opt-in."
+    - title: "SECUENCIAS MULTICANAL"
+      description: "SMS + Email + Llamada automatizada en los primeros 5 minutos después del registro. Speed-to-lead es todo en seguros."
+    - title: "OPTIMIZACIÓN DE CREATIVOS"
+      description: "Testing continuo de mensajes que precalifican desde el anuncio. 'Si no tienes auto, no aplica' eliminaba el ruido."
+
+result:
+  title: "Resultado Final"
+  final_metrics:
+    - value: "60%"
+      description: "Tasa de contacto (antes: 15%)"
+    - value: "$27"
+      description: "Nuevo CPL (antes: $45)"
+    - value: "3x"
+      description: "ROI sobre inversión"
+  testimonial: "Después de trabajar con In Agencia, nuestros agentes solo hablan con personas que realmente quieren un seguro. El tiempo perdido bajó un 70%."
+  cta: "¿Quieres resultados similares?"
+
+# Placeholders para media (actualizar con rutas reales)
+media:
+  video:
+    title: "Testimonial del Cliente"
+    subtitle: "Escucha directamente del cliente cómo transformamos su negocio"
+    placeholder: "[Placeholder - Añadir video aquí]"
+    # url: "/videos/caso-seguros-usa.mp4"
+  
+  gallery:
+    title: "Evidencia Visual"
+    subtitle: "Capturas del sistema implementado"
+    images:
+      - alt: "Landing page de captación"
+        placeholder: "Landing"
+        # src: "/images/casos/seguros-usa/landing.jpg"
+      - alt: "Dashboard de leads"
+        placeholder: "Dashboard"
+        # src: "/images/casos/seguros-usa/dashboard.jpg"
+      - alt: "Flujo de automatización"
+        placeholder: "Automation"
+        # src: "/images/casos/seguros-usa/automation.jpg"
+      - alt: "Reporte de resultados"
+        placeholder: "Reportes"
+        # src: "/images/casos/seguros-usa/reports.jpg"
+      - alt: "Creativos de anuncios"
+        placeholder: "Ads"
+        # src: "/images/casos/seguros-usa/ads.jpg"
+      - alt: "Panel de seguimiento"
+        placeholder: "Tracking"
+        # src: "/images/casos/seguros-usa/tracking.jpg"

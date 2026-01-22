@@ -1,0 +1,90 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DEL CASO DE ESTUDIO: E-COMMERCE B2B
+# ═══════════════════════════════════════════════════════════════════════════════
+
+meta:
+  tag: "B2B • Servicios Profesionales"
+  title: "De $20K a $3,000,000 en 18 meses"
+  subtitle: "Empresa B2B de servicios profesionales con tickets altos que necesitaba prospectos calificados, no curiosos. Implementamos un sistema de filtrado quirúrgico."
+
+metrics:
+  - value: "$3M"
+    label: "INGRESOS"
+    sublabel: "en 18 meses"
+  - value: "150x"
+    label: "ROI TOTAL"
+    sublabel: "sobre inversión"
+  - value: "$20K"
+    label: "INVERSIÓN INICIAL"
+    sublabel: "punto de partida"
+  - value: "18"
+    label: "MESES"
+    sublabel: "para escalar"
+
+challenge:
+  title: "El Desafío"
+  paragraphs:
+    - "Una empresa de consultoría B2B con un ticket promedio de $15,000 estaba gastando $5,000/mes en Google Ads sin resultados tangibles. Recibían muchos leads, pero ninguno convertía."
+    - "El problema no era el volumen, era la calidad. Atraían curiosos y estudiantes, no tomadores de decisiones con presupuesto."
+    - "Su ROI sobre inversión publicitaria era negativo. Literalmente, perdían dinero."
+  
+  initial_situation:
+    title: "Situación Inicial"
+    items:
+      - "Generando 50+ leads/mes, 0 conversiones"
+      - "CPL de $100 (3x superior al benchmark)"
+      - "Equipo de ventas frustrado con leads no calificados"
+      - "Sin sistema de seguimiento automatizado"
+
+timeline:
+  title: "La Transformación"
+  subtitle: "El roadmap exacto que seguimos para multiplicar su revenue por 150."
+  phases:
+    - month: "MES 1-2"
+      title: "AUDITORÍA Y SETUP"
+      description: "Analizamos su funnel existente e identificamos fugas críticas. Implementamos rastreo avanzado y configuramos estructura de campañas."
+      result: "Identificamos que su costo por lead era 3x superior al promedio de la industria."
+    - month: "MES 3-4"
+      title: "OPTIMIZACIÓN AGRESIVA"
+      description: "Rediseñamos creativos y landing pages. Testing A/B de audiencias y copy. Eliminamos campañas no rentables."
+      result: "Reducción del CPL en un 65%. Primeros leads calificados a escala."
+    - month: "MES 5-8"
+      title: "AUTOMATIZACIÓN DEL SEGUIMIENTO"
+      description: "Implementamos secuencias de email y WhatsApp automatizadas. El equipo de ventas solo recibe leads calificados."
+      result: "Tasa de conversión de lead a demo subió del 8% al 32%."
+    - month: "MES 9-18"
+      title: "ESCALADO VERTICAL"
+      description: "Incremento gradual de presupuesto de $5K a $40K/mes. Expansión a nuevos canales y mercados."
+      result: "Revenue mensual pasó de $20K a $250K. Crecimiento 10x."
+
+result:
+  title: "Resultado Final"
+  main_metric: "150x"
+  main_label: "ROI"
+  description: "Una inversión inicial de $20K en publicidad generó $3,000,000 en contratos cerrados en 18 meses."
+  cta: "¿Quieres resultados similares?"
+
+# Placeholders para media (actualizar con rutas reales)
+media:
+  video:
+    title: "Video del Caso"
+    subtitle: "Mira la historia completa en menos de 3 minutos"
+    placeholder: "[Placeholder - Añadir video aquí]"
+    # url: "/videos/caso-ecommerce-b2b.mp4"  # Descomentar y actualizar cuando tengas el video
+  
+  gallery:
+    title: "Capturas del Proyecto"
+    subtitle: "Evidencia visual de la transformación"
+    images:
+      - alt: "Dashboard de métricas"
+        placeholder: "Dashboard"
+        # src: "/images/casos/ecommerce-b2b/dashboard.jpg"
+      - alt: "Embudo de conversión"
+        placeholder: "Funnel"
+        # src: "/images/casos/ecommerce-b2b/funnel.jpg"
+      - alt: "Creativos de anuncios"
+        placeholder: "Ads"
+        # src: "/images/casos/ecommerce-b2b/ads.jpg"
+      - alt: "Resultados de campaña"
+        placeholder: "Resultados"
+        # src: "/images/casos/ecommerce-b2b/results.jpg"
