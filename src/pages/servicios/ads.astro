@@ -1,0 +1,73 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import ServiceHero from '../../components/sections/ServiceHero.astro';
+import ServiceStats from '../../components/sections/ServiceStats.astro';
+import WhatWeDo from '../../components/sections/WhatWeDo.astro';
+import ServiceInclusions from '../../components/sections/ServiceInclusions.astro';
+import Testimonial from '../../components/sections/Testimonial.astro';
+import Platforms from '../../components/sections/Platforms.astro';
+import CtaSection from '../../components/sections/CtaSection.astro';
+
+
+const serviceData = {
+  title: "Publicidad que se paga sola",
+  subtitle: "No 'gestionamos' tu presupuesto. Lo multiplicamos. En In Agencia, los ads tienen un solo objetivo: generar dinero real para tu negocio.",
+  features: [
+    {
+      title: "Estrategia antes de gastar",
+      description: "Antes de poner un peso, entendemos a tu cliente ideal, tu ticket promedio y qué ha funcionado antes. Sin esto, los ads son lotería."
+    },
+    {
+      title: "Creativos que venden",
+      description: "No hacemos contenido bonito. Hacemos anuncios que detienen el scroll, generan clic y califican al lead desde el primer momento."
+    },
+    {
+      title: "Optimización obsesiva",
+      description: "Revisamos las campañas cada 48-72 horas. Ajustamos pujas, audiencias y creativos constantemente. Sin esperar a fin de mes."
+    },
+    {
+      title: "Reportes que entiendes",
+      description: "Te mostramos lo que importa: cuánto gastaste, cuántos leads llegaron, cuántas ventas y cuál fue tu ROI. Sin jerga innecesaria."
+    },
+    {
+      title: "Testing A/B constante",
+      description: "Probamos variaciones de copy, creativos y audiencias. Lo que funciona se escala. Lo que no, se mata rápido."
+    },
+    {
+      title: "Retargeting inteligente",
+      description: "No dejamos que los visitantes se olviden de ti. Secuencias estratégicas para recuperar leads tibios y convertirlos."
+    }
+  ],
+  stats: [
+    { value: "5-8x", label: "ROAS Promedio", highlight: true },
+    { value: "-40%", label: "Costo por Lead", highlight: false },
+    { value: "+150%", label: "Tasa de Conversión", highlight: false },
+    { value: "48h", label: "Tiempo de Respuesta", highlight: false }
+  ],
+  testimonial: {
+    quote: "Pasamos de gastar $5,000/mes sin saber si funcionaba, a tener un sistema que nos genera $50K en ventas mensuales de forma predecible.",
+    author: "Roberto M.",
+    role: "CEO",
+    company: "Empresa B2B de Servicios"
+  }
+};
+---
+
+<Layout title="Ads de Performance | In Agencia">
+  <Header />
+  	<main>
+		<ServiceHero 
+			title="Ads de Performance" 
+			subtitle="Escalamos tus ventas con un sistema de pauta publicitaria enfocado 100% en ROI. No nos interesan los likes, nos interesa tu facturación."
+			bgImage="/images/service_performance_bg.png"
+		/>
+    <WhatWeDo title="Cómo lo hacemos" items={serviceData.features} />
+    <ServiceInclusions />
+    <Testimonial testimonial={serviceData.testimonial} />
+    <Platforms />
+    <CtaSection />
+  </main>
+  <Footer />
+</Layout>

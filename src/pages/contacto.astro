@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/layout/Header.astro";
+import Footer from "../components/layout/Footer.astro";
+import ContactIntro from "../components/sections/ContactIntro.astro";
+import Faq from "../components/sections/Faq.astro";
+import FaqItem from "../components/sections/FaqItem.astro";
+---
+
+<Layout title="Agendar Diagnóstico | In Agencia">
+  <Header />
+  <main class="bg-secondary">
+    <ContactIntro />
+
+    <section class="py-12 bg-secondary">
+      <div class="max-w-[1400px] mx-auto px-8">
+        <div
+          class="glass-card rounded-[3rem] overflow-hidden min-h-[700px] mb-24 reveal p-2"
+        >
+          <!-- Calendly inline widget begin -->
+          <div
+            class="calendly-inline-widget rounded-[2.5rem] overflow-hidden"
+            data-url="https://calendly.com/studio-marquez-j/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=020203&text_color=ffffff&primary_color=ffffff"
+            style="min-width:320px;height:700px;"
+          >
+          </div>
+          <script
+            type="text/javascript"
+            src="https://assets.calendly.com/assets/external/widget.js"
+            async></script>
+          <!-- Calendly inline widget end -->
+        </div>
+
+        <Faq>
+          <FaqItem question="¿Cuánto cuesta trabajar con In Agencia?">
+            <p>
+              Depende del alcance. Nuestros proyectos van desde servicios de
+              gestión de ads hasta sistemas completos de automatización y
+              funnels.
+            </p>
+            <p class="mt-2">
+              No somos la opción más barata, pero somos la que más retorno
+              genera por cada dólar que inviertes.
+            </p>
+          </FaqItem>
+          <FaqItem question="¿Garantizan resultados?">
+            <p>
+              Garantizamos tres cosas: Estrategia basada en datos, ejecución
+              obsesiva y transparencia total.
+            </p>
+            <p class="mt-2">
+              Si en 30 días no hay tracción (leads reales llegando), revisamos
+              todo y ajustamos sin costo extra.
+            </p>
+          </FaqItem>
+          <FaqItem question="¿Cuánto tiempo toma ver resultados?">
+            <p>
+              Primeros indicadores en 1-2 semanas. Optimización inicial en 30
+              días. Sistema afinado y escalable en 60-90 días.
+            </p>
+            <p class="mt-2 text-sm italic">
+              Si alguien te promete milagros en 48 horas, te está mintiendo.
+            </p>
+          </FaqItem>
+          <FaqItem question="¿En qué países trabajan?">
+            <p>
+              Trabajamos con clientes en Estados Unidos, México, Colombia, Perú,
+              Argentina y España.
+            </p>
+            <p class="mt-2">
+              Operamos 100% remoto con reuniones por videollamada.
+            </p>
+          </FaqItem>
+        </Faq>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

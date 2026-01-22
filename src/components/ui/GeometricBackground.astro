@@ -1,0 +1,115 @@
+---
+interface Props {
+  variant?: 'dark' | 'light';
+  intensity?: 'low' | 'medium' | 'high';
+}
+
+const { variant = 'dark', intensity = 'medium' } = Astro.props;
+
+const bgColor = variant === 'dark' ? 'bg-blue-900' : 'bg-white';
+const shapeColor = variant === 'dark' ? 'white' : 'black';
+const opacityMap = {
+  low: '0.08',
+  medium: '0.15',
+  high: '0.25'
+};
+const opacity = opacityMap[intensity];
+---
+
+<div class={`absolute inset-0 overflow-hidden ${bgColor}`}>
+  <!-- Large floating shapes -->
+  <div class="absolute inset-0">
+    <!-- Circle 1 - Large outline -->
+    <div 
+      class="absolute w-[700px] h-[700px] rounded-full border-2"
+      style={`border-color: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: -15%; left: -10%; animation: float 20s ease-in-out infinite;`}
+    ></div>
+    
+    <!-- Circle 2 - Medium filled -->
+    <div 
+      class="absolute w-[400px] h-[400px] rounded-full"
+      style={`background: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${parseFloat(opacity) * 0.3}); top: 50%; right: -8%; animation: float 25s ease-in-out infinite reverse;`}
+    ></div>
+    
+    <!-- Square rotated - large -->
+    <div 
+      class="absolute w-[400px] h-[400px] border-2 rotate-45"
+      style={`border-color: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: 10%; right: 15%; animation: float 18s ease-in-out infinite;`}
+    ></div>
+    
+    <!-- Triangle filled -->
+    <div 
+      class="absolute"
+      style={`
+        width: 0; 
+        height: 0; 
+        border-left: 200px solid transparent;
+        border-right: 200px solid transparent;
+        border-bottom: 350px solid rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${parseFloat(opacity) * 0.5});
+        top: 30%;
+        left: 5%;
+        animation: float 22s ease-in-out infinite reverse;
+      `}
+    ></div>
+    
+    <!-- Small circles cluster -->
+    <div 
+      class="absolute w-[150px] h-[150px] rounded-full"
+      style={`background: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: 65%; left: 25%; animation: float 15s ease-in-out infinite;`}
+    ></div>
+    <div 
+      class="absolute w-[80px] h-[80px] rounded-full"
+      style={`background: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: 72%; left: 32%; animation: float 12s ease-in-out infinite reverse;`}
+    ></div>
+    <div 
+      class="absolute w-[50px] h-[50px] rounded-full"
+      style={`background: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: 60%; left: 20%; animation: float 10s ease-in-out infinite;`}
+    ></div>
+    
+    <!-- Line grid pattern - more visible -->
+    <div 
+      class="absolute w-[600px] h-[600px]"
+      style={`
+        background-image: 
+          linear-gradient(rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${parseFloat(opacity) * 0.8}) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${parseFloat(opacity) * 0.8}) 1px, transparent 1px);
+        background-size: 60px 60px;
+        top: 0%;
+        right: 0%;
+        transform: rotate(12deg);
+      `}
+    ></div>
+    
+    <!-- Dotted pattern area -->
+    <div 
+      class="absolute w-[400px] h-[400px]"
+      style={`
+        background-image: radial-gradient(rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}) 3px, transparent 3px);
+        background-size: 25px 25px;
+        bottom: 5%;
+        left: 0%;
+      `}
+    ></div>
+    
+    <!-- Large ring bottom -->
+    <div 
+      class="absolute w-[900px] h-[900px] rounded-full border-4"
+      style={`border-color: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); bottom: -40%; right: -25%; animation: float 30s ease-in-out infinite;`}
+    ></div>
+    
+    <!-- Extra shapes for density -->
+    <div 
+      class="absolute w-[200px] h-[200px] rounded-full border"
+      style={`border-color: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); top: 45%; left: 60%; animation: float 14s ease-in-out infinite;`}
+    ></div>
+    
+    <div 
+      class="absolute w-[250px] h-[250px] rotate-12 border"
+      style={`border-color: rgba(${shapeColor === 'white' ? '255,255,255' : '0,0,0'}, ${opacity}); bottom: 20%; left: 40%; animation: float 16s ease-in-out infinite reverse;`}
+    ></div>
+  </div>
+  
+  <!-- Subtle gradient overlay -->
+  <div class={`absolute inset-0 ${variant === 'dark' ? 'bg-gradient-to-br from-blue-900/70 via-transparent to-blue-800/70' : 'bg-gradient-to-br from-white/70 via-transparent to-gray-50/70'}`}></div>
+</div>
+

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>In Agencia - Elite Performance Marketing</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <style type="text/tailwindcss">
+        :root {
+            --deep-midnight: #020203;
+            --mercury: #e2e8f0;
+            --electric-blue: #00f2ff;
+            --gold-accent: #d4af37;
+        }
+        @layer base {
+            body {
+                @apply bg-[#020203] text-white antialiased overflow-x-hidden;
+                font-family: "Plus Jakarta Sans", sans-serif;
+            }
+        }
+        .font-serif-elite {
+            font-family: "Playfair Display", serif;
+        }
+        .grainy-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.015;
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDp5tDBTm2ITRwHBpTNBY3rxuyPqmdQ6vvLDvznvP6J-yHlNZsldrPSzFpUhaGrII0v05G6Ao81ijA5XmKOaOo9Tam6rf75b5L_3XG0UoJfDdzh94xnFi5FJ6jhhj62UJpy2u2UU6Ja2x3_7gN72caf5DHz7GteRlfZso8dYeMP-zrB14z7qKtLELovvY4V5Xur7TgR5m_yPhlva6JJxpG77U1WTjpAI3nKc55qY9oKdXVZWZ1PeMbCXhWsZ0hgwXDva1EmyT6PMaWV);
+            mix-blend-mode: overlay;
+        }
+        .jewelry-nav {
+            backdrop-filter: blur(20px);
+            background: rgba(2, 2, 3, 0.6);
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+        .ultra-thin-border {
+            border: 0.5px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-border-subtle {
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+        }
+        .mercury-text {
+            background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-sphere {
+            background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0) 70%);
+            backdrop-filter: blur(10px);
+            border: 0.5px solid rgba(255, 255, 255, 0.2);
+            box-shadow: inset -10px -10px 30px rgba(0,0,0,0.5), 
+                        inset 10px 10px 30px rgba(255,255,255,0.1),
+                        0 20px 50px rgba(0,0,0,0.8);
+        }
+        .fluid-mercury {
+            background: radial-gradient(circle at 50% 50%, #e2e8f0 0%, #475569 100%);
+            filter: contrast(150%) brightness(120%);
+            mix-blend-mode: screen;
+            opacity: 0.4;
+        }
+        .cta-elite-glow {
+            position: relative;
+            background: #fff;
+            color: #000;
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+            overflow: hidden;
+            border: 0.5px solid rgba(255,255,255,0.5);
+        }
+        .cta-elite-glow::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(0, 242, 255, 0.3) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .cta-elite-glow:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 0 30px rgba(0, 242, 255, 0.4), 0 0 60px rgba(255, 255, 255, 0.1);
+            letter-spacing: 0.05em;
+        }
+        .cta-elite-glow:hover::before {
+            opacity: 1;
+        }
+        .nav-link-jewelry {
+            position: relative;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+        .nav-link-jewelry::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 0; height: 1px;
+            background: #fff;
+            transition: width 0.3s ease;
+        }
+        .nav-link-jewelry:hover::after {
+            width: 100%;
+        }
+        .hero-title-mask {
+            mix-blend-mode: difference;
+        }
+    </style>
+</head>
+
+<body class="selection:bg-white selection:text-black">
+    <div class="grainy-overlay"></div>
+    <nav class="fixed top-0 w-full z-50 jewelry-nav px-8 py-5">
+        <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4 group cursor-pointer">
+                <div
+                    class="w-8 h-8 rounded-full ultra-thin-border flex items-center justify-center bg-white/5 group-hover:bg-white/10 transition-all">
+                    <div class="w-1.5 h-1.5 bg-white rounded-full"></div>
+                </div>
+                <span class="text-lg font-bold tracking-[0.3em] uppercase hero-title-mask">IN <span
+                        class="font-extralight opacity-60">AGENCIA</span></span>
+            </div>
+            <div class="hidden lg:flex items-center gap-12 text-[10px] font-bold tracking-[0.25em] uppercase">
+                <a class="nav-link-jewelry opacity-60 hover:opacity-100" href="#">Servicios</a>
+                <a class="nav-link-jewelry opacity-60 hover:opacity-100" href="#">Protocolo</a>
+                <a class="nav-link-jewelry opacity-60 hover:opacity-100" href="#">Resultados</a>
+                <div class="h-4 w-[0.5px] bg-white/20"></div>
+                <a class="ultra-thin-border px-6 py-2.5 rounded-full hover:bg-white hover:text-black transition-all duration-500"
+                    href="#">Acceso Privado</a>
+            </div>
+            <button class="lg:hidden">
+                <span class="material-symbols-outlined font-light">menu</span>
+            </button>
+        </div>
+    </nav>
+    <main class="relative min-h-screen flex items-center pt-24 overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full -z-10">
+            <div class="absolute top-[15%] left-[10%] w-[600px] h-[600px] glass-sphere rounded-full opacity-20 blur-sm">
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[5%] w-[800px] h-[800px] glass-sphere rounded-full opacity-10 blur-md">
+            </div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] opacity-20 pointer-events-none">
+                <svg class="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="grad" x1="0%" x2="100%" y1="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0.2"></stop>
+                            <stop offset="100%" style="stop-color:rgb(0,0,0);stop-opacity:0"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path d="M 0 500 Q 250 200 500 500 T 1000 500" fill="none" stroke="url(#grad)" stroke-width="0.5">
+                    </path>
+                    <path d="M 0 600 Q 300 300 600 600 T 1200 600" fill="none" opacity="0.5" stroke="url(#grad)"
+                        stroke-width="0.5"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="max-w-[1400px] mx-auto px-8 w-full">
+            <div class="grid lg:grid-cols-12 gap-16 items-center">
+                <div class="lg:col-span-8 relative z-10">
+                    <div
+                        class="inline-flex items-center gap-4 mb-10 ultra-thin-border px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-[#00f2ff] shadow-[0_0_10px_#00f2ff]"></span>
+                        <span class="text-[9px] font-bold tracking-[0.4em] uppercase opacity-70">Marketing Boutique de
+                            Élite</span>
+                    </div>
+                    <h1
+                        class="text-6xl md:text-8xl xl:text-[110px] font-extrabold leading-[0.85] tracking-tighter mb-10 mercury-text">
+                        TRANSFORMAMOS <br />
+                        <span class="font-serif-elite italic font-normal lowercase tracking-normal px-2">leads</span>
+                        EN <br />
+                        <span class="text-white">FORTUNA.</span>
+                    </h1>
+                    <div class="flex flex-col md:flex-row gap-12 items-start md:items-center">
+                        <div class="max-w-md">
+                            <p class="text-lg md:text-xl text-zinc-400 font-light leading-relaxed mb-8">
+                                No competimos por atención. Dominamos el mercado con <span
+                                    class="text-white italic">precisión quirúrgica</span> y retornos de inversión
+                                auditados.
+                            </p>
+                            <div class="flex flex-wrap gap-6">
+                                <a class="cta-elite-glow px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-4"
+                                    href="#">
+                                    Ver si calificas
+                                    <span class="material-symbols-outlined text-lg">arrow_outward</span>
+                                </a>
+                                <a class="px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] ultra-thin-border hover:bg-white/5 transition-all"
+                                    href="#">
+                                    Metodología
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-8 pl-8 border-l ultra-thin-border border-white/10">
+                            <div>
+                                <div class="text-3xl font-bold tracking-tighter">+12M€</div>
+                                <div class="text-[8px] uppercase tracking-[0.3em] opacity-40 mt-1 font-bold">Capital
+                                    Gestionado</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold tracking-tighter">4.8<span class="text-sm">X</span></div>
+                                <div class="text-[8px] uppercase tracking-[0.3em] opacity-40 mt-1 font-bold">ROI
+                                    Auditoría</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-4 relative">
+                    <div class="relative w-full aspect-[4/5] flex items-center justify-center">
+                        <div
+                            class="absolute inset-0 ultra-thin-border rounded-[2rem] bg-white/5 backdrop-blur-3xl overflow-hidden glow-border-subtle">
+                            <div
+                                class="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-white/10 to-transparent">
+                            </div>
+                            <div class="p-8 h-full flex flex-col justify-between">
+                                <div class="flex justify-between items-start">
+                                    <div class="space-y-1">
+                                        <div class="text-[10px] font-bold tracking-widest opacity-40 uppercase">Global
+                                            Analytics</div>
+                                        <div class="text-xl font-bold">Protocol Alpha</div>
+                                    </div>
+                                    <div
+                                        class="w-10 h-10 rounded-xl ultra-thin-border flex items-center justify-center bg-black/40">
+                                        <span
+                                            class="material-symbols-outlined text-white/40 text-sm">filter_vintage</span>
+                                    </div>
+                                </div>
+                                <div class="space-y-6">
+                                    <div
+                                        class="h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent">
+                                    </div>
+                                    <div class="flex items-end justify-between">
+                                        <div>
+                                            <div class="text-4xl font-extrabold tracking-tighter">$840.2k</div>
+                                            <div class="text-[9px] font-bold tracking-widest opacity-40 uppercase mt-2">
+                                                Current Quarter Revenue</div>
+                                        </div>
+                                        <div class="flex items-center gap-1 text-[#00f2ff]">
+                                            <span class="material-symbols-outlined text-sm">trending_up</span>
+                                            <span class="text-[10px] font-bold">32.4%</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-2 h-12 items-end">
+                                        <div class="flex-1 bg-white/5 rounded-t-sm h-[40%]"></div>
+                                        <div class="flex-1 bg-white/10 rounded-t-sm h-[60%]"></div>
+                                        <div class="flex-1 bg-[#00f2ff]/40 rounded-t-sm h-[90%]"></div>
+                                        <div class="flex-1 bg-white/10 rounded-t-sm h-[70%]"></div>
+                                        <div class="flex-1 bg-white/5 rounded-t-sm h-[50%]"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute -top-12 -right-12 w-32 h-32 glass-sphere rounded-full z-20"></div>
+                        <div
+                            class="absolute -bottom-16 -left-16 w-48 h-48 glass-sphere rounded-full z-20 opacity-80 scale-75">
+                        </div>
+                        <div
+                            class="absolute top-1/2 -right-20 w-40 h-40 fluid-mercury blur-2xl rounded-full mix-blend-color-dodge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+            <span class="text-[8px] uppercase tracking-[0.5em] font-bold">Explorar Protocolo</span>
+            <div class="w-[0.5px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+        </div>
+    </main>
+    <div class="w-full border-t ultra-thin-border py-16 bg-black">
+        <div class="max-w-[1400px] mx-auto px-8">
+            <p class="text-[9px] font-bold tracking-[0.4em] uppercase opacity-30 text-center mb-12">Socios Estratégicos
+                Seleccionados</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-16 md:gap-32 opacity-20 grayscale transition-all duration-700 hover:opacity-100 hover:grayscale-0">
+                <span class="text-xl font-bold tracking-tighter">LUXE.CAPITAL</span>
+                <span class="text-xl font-bold tracking-tighter">EMPIRE.X</span>
+                <span class="text-xl font-bold tracking-tighter">VELOCITY.G</span>
+                <span class="text-xl font-bold tracking-tighter">NOBLE.CO</span>
+                <span class="text-xl font-bold tracking-tighter">PRIME.HQ</span>
+            </div>
+        </div>
+    </div>
+    <div class="fixed w-[800px] h-[800px] bg-white/5 rounded-full blur-[140px] pointer-events-none -z-10 transition-opacity duration-500 opacity-0 lg:opacity-100"
+        id="cursor-glow"></div>
+    <script>
+        const glow = document.getElementById('cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            const x = e.clientX - 400;
+            const y = e.clientY - 400;
+            glow.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+
+</body>
+
+</html>

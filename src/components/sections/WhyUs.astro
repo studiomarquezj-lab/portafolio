@@ -1,0 +1,85 @@
+---
+const features = [
+  {
+    icon: "🎯",
+    title: "ENFOQUE EN REVENUE",
+    description:
+      "No nos interesan las métricas de vanidad. Todo lo que hacemos tiene un solo objetivo: aumentar tu facturación neta.",
+  },
+  {
+    icon: "⚡",
+    title: "VELOCIDAD DE ÉLITE",
+    description:
+      "Implementamos sistemas de escalado en tiempo récord. Tu competencia no sabrá qué los golpeó.",
+  },
+  {
+    icon: "📊",
+    title: "DATA QUIRÚRGICA",
+    description:
+      "Decisiones basadas en números fríos, no en intuiciones. Si los datos no lo dicen, no lo hacemos.",
+  },
+  {
+    icon: "🤝",
+    title: "SOCIOS DE CAPITAL",
+    description:
+      "No somos un proveedor externo. Somos tu equipo de ingeniería de ventas. Tu éxito es nuestro ROI.",
+  },
+  {
+    icon: "🚀",
+    title: "ESCALADO INFINITO",
+    description:
+      "Construimos sistemas que no se rompen bajo presión. Si tu negocio puede crecer, nuestro sistema lo llevará al límite.",
+  },
+  {
+    icon: "🔒",
+    title: "TRANSPARENCIA TOTAL",
+    description:
+      "Tendrás acceso a cada centavo invertido y cada dólar generado. Sin secretos, sin excusas.",
+  },
+];
+---
+
+<section class="py-32 bg-secondary relative overflow-hidden">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <div class="reveal max-w-4xl mb-20">
+      <div
+        class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        Nuestros Pilares
+      </div>
+      <h2
+        class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter uppercase mb-6"
+      >
+        ¿Por qué confiar en <span
+          class="font-serif-elite italic text-accent lowercase">Nosotros?</span
+        >
+      </h2>
+      <p class="text-xl md:text-2xl text-zinc-500 font-light max-w-2xl">
+        La diferencia entre una agencia tradicional y una consultora de
+        ingeniería comercial es el compromiso con los números.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        features.map((feature, i) => (
+          <div
+            class="reveal group p-10 rounded-[2.5rem] glass-card transition-all duration-700"
+            style={`transition-delay: ${i * 100}ms;`}
+          >
+            <div class="w-16 h-16 rounded-2xl ultra-thin-border flex items-center justify-center text-3xl mb-8 group-hover:scale-110 transition-transform duration-500 bg-white/5">
+              {feature.icon}
+            </div>
+            <h3 class="text-xl font-display font-black text-white mb-6 uppercase tracking-tight group-hover:text-accent transition-colors">
+              {feature.title}
+            </h3>
+            <p class="text-zinc-500 text-lg leading-relaxed group-hover:text-zinc-400 transition-colors">
+              {feature.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

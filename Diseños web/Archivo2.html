@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>In Agencia - Protocolo &amp; Metodología</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Outfit:wght@300;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        background: "#050505",
+                        surface: "#0F0F0F",
+                        cyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            900: '#164e63',
+                        }
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'glow-gradient': 'radial-gradient(circle at center, rgba(34,211,238,0.15) 0%, rgba(0,0,0,0) 70%)',
+                        'grid-pattern': 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)',
+                    },
+                    boxShadow: {
+                        'neon': '0 0 20px rgba(34, 211, 238, 0.3)',
+                        'neon-sm': '0 0 10px rgba(34, 211, 238, 0.5)',
+                    }
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            background-color: #050505;
+            color: #e2e8f0;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 3px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #22d3ee;
+        }
+
+        .jewel-node {
+            position: relative;
+        }
+
+        .jewel-node::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 150%;
+            height: 150%;
+            border: 1px solid rgba(34, 211, 238, 0.3);
+            border-radius: 50%;
+            animation: pulse-ring 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: translate(-50%, -50%) scale(0.8);
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
+    <nav class="fixed top-0 z-50 w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <div class="flex items-center gap-3 group cursor-pointer">
+                <div class="relative">
+                    <div
+                        class="absolute inset-0 bg-cyan-400 blur-lg opacity-20 group-hover:opacity-40 transition-opacity">
+                    </div>
+                    <img alt="In Agencia Logo" class="h-8 w-auto relative z-10 brightness-0 invert"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGW2XNXNavI78xk7_zUBKLHM9JCcc8sC9p2cXgw3LfxHHjCJEwVy87SMFJQdJCDdZoNr_ofCz5oIYocyrAc0Zfh1nkbYDQAorQtcZ8NfyJXyxNWenOWczZXSYTzp99N7bC6hi0phIB_LYKB9J2z-KJVp7q4pETg27hOMh0rlHzOVPmDD6xNgBF53dm3sprkqApAHgN49i-KLOFKkeogQLbUT_KcOfSIn86Hmd0H3XYc-q0_FGr4Tk_dHTud_SoyZtJ_pLnQO4fSADA" />
+                </div>
+                <span class="font-display text-lg font-bold uppercase tracking-[0.2em] text-white">In Agencia</span>
+            </div>
+            <div
+                class="hidden md:flex items-center gap-10 text-xs font-bold tracking-[0.15em] uppercase text-slate-400">
+                <a class="hover:text-cyan-400 transition-colors duration-300" href="#">Manifiesto</a>
+                <a class="text-white border-b border-cyan-400 pb-1" href="#">Protocolo</a>
+                <a class="hover:text-cyan-400 transition-colors duration-300" href="#">Casos</a>
+            </div>
+            <a class="hidden md:block px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 text-white text-xs font-bold uppercase tracking-widest rounded-sm hover:shadow-neon transition-all duration-300"
+                href="#">
+                Aplicar Ahora
+            </a>
+        </div>
+    </nav>
+    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-24">
+        <div class="absolute inset-0 z-0">
+            <div
+                class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&amp;w=2301&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-20 grayscale mix-blend-overlay">
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#050505]/90 to-[#050505]"></div>
+            <div class="absolute inset-0 bg-grid-pattern bg-[size:40px_40px] opacity-20"></div>
+            <div
+                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-500/10 blur-[120px] rounded-full">
+            </div>
+        </div>
+        <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+            <div
+                class="inline-flex items-center gap-3 px-4 py-1.5 border border-cyan-500/30 bg-cyan-950/10 backdrop-blur-md rounded-full mb-8">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 shadow-[0_0_10px_#22d3ee]"></span>
+                <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-200">Metodología Propietaria
+                    v3.0</span>
+            </div>
+            <h1
+                class="font-display text-6xl md:text-8xl lg:text-9xl font-black mb-8 leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-white/40">
+                EL PROTOCOLO<br />
+                <span class="text-stroke-1 text-transparent bg-clip-text bg-gradient-to-b from-white/20 to-transparent"
+                    style="-webkit-text-stroke: 1px rgba(255,255,255,0.1);">IN AGENCIA</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed tracking-wide">
+                Donde la <span class="text-cyan-400 font-normal">ciencia de datos</span> converge con la psicología del
+                comportamiento. Un sistema cerrado de crecimiento exponencial para marcas que no compiten, dominan.
+            </p>
+            <div class="mt-16 flex justify-center">
+                <div class="h-24 w-px bg-gradient-to-b from-cyan-500/50 to-transparent"></div>
+            </div>
+        </div>
+    </header>
+    <main class="relative z-10 pb-40 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div
+                class="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-white/10 to-transparent transform md:-translate-x-1/2 h-full z-0">
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 mb-32 group">
+                <div class="md:w-1/2 md:text-right order-2 md:order-1">
+                    <div
+                        class="p-8 border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl rounded-sm hover:border-cyan-500/30 transition-all duration-500 hover:shadow-lg hover:shadow-cyan-900/10 group-hover:-translate-y-1">
+                        <h3 class="font-display text-3xl font-bold text-white mb-2">Inmersión &amp; Auditoría</h3>
+                        <p class="text-xs font-mono text-cyan-400 mb-6 uppercase tracking-widest">Fase 01 // Diagnóstico
+                        </p>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Desmantelamos su estructura actual. Analizamos más de 150 puntos de datos para identificar
+                            fugas de capital y cuellos de botella operativos. No asumimos nada; auditamos todo.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center order-1 md:order-2">
+                    <div
+                        class="w-12 h-12 rounded-full border border-cyan-500/30 bg-[#050505] flex items-center justify-center jewel-node shadow-neon-sm z-20">
+                        <div class="w-3 h-3 bg-cyan-400 rotate-45 transform"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 pl-12 hidden md:block order-3 opacity-30 font-mono text-xs text-right">
+                    DATA_NODE_01 :: READY
+                </div>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 mb-32 group">
+                <div class="md:w-1/2 pr-12 hidden md:block order-3 md:order-1 opacity-30 font-mono text-xs text-left">
+                    SYSTEM_ARCH_02 :: BUILD
+                </div>
+                <div class="relative flex items-center justify-center order-1 md:order-2">
+                    <div
+                        class="w-12 h-12 rounded-full border border-cyan-500/30 bg-[#050505] flex items-center justify-center jewel-node shadow-neon-sm z-20">
+                        <div class="w-3 h-3 bg-cyan-400 rotate-45 transform"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:text-left order-2 md:order-3">
+                    <div
+                        class="p-8 border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl rounded-sm hover:border-cyan-500/30 transition-all duration-500 hover:shadow-lg hover:shadow-cyan-900/10 group-hover:-translate-y-1">
+                        <h3 class="font-display text-3xl font-bold text-white mb-2">Arquitectura de Sistemas</h3>
+                        <p class="text-xs font-mono text-cyan-400 mb-6 uppercase tracking-widest">Fase 02 //
+                            Infraestructura</p>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Construimos el ecosistema. Funnels de alta conversión, automatización de CRMs y seguimiento
+                            avanzado server-side. Preparamos el vehículo para soportar velocidad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 mb-32 group">
+                <div class="md:w-1/2 md:text-right order-2 md:order-1">
+                    <div
+                        class="p-8 border border-white/5 bg-[#0A0A0A]/80 backdrop-blur-xl rounded-sm hover:border-cyan-500/30 transition-all duration-500 hover:shadow-lg hover:shadow-cyan-900/10 group-hover:-translate-y-1">
+                        <h3 class="font-display text-3xl font-bold text-white mb-2">Despliegue Táctico</h3>
+                        <p class="text-xs font-mono text-cyan-400 mb-6 uppercase tracking-widest">Fase 03 // Adquisición
+                        </p>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Lanzamiento de campañas omnicanal con creativos cinematográficos. Micro-testing agresivo
+                            para encontrar el ángulo ganador. Compramos tráfico; compramos atención.
+                        </p>
+                    </div>
+                </div>
+                <div class="relative flex items-center justify-center order-1 md:order-2">
+                    <div
+                        class="w-12 h-12 rounded-full border border-cyan-500/30 bg-[#050505] flex items-center justify-center jewel-node shadow-neon-sm z-20">
+                        <div class="w-3 h-3 bg-cyan-400 rotate-45 transform"></div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 pl-12 hidden md:block order-3 opacity-30 font-mono text-xs text-right">
+                    DEPLOYMENT_03 :: ACTIVE
+                </div>
+            </div>
+            <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 group">
+                <div class="md:w-1/2 pr-12 hidden md:block order-3 md:order-1 opacity-30 font-mono text-xs text-left">
+                    SCALE_UP_04 :: OPTIMIZE
+                </div>
+                <div class="relative flex items-center justify-center order-1 md:order-2">
+                    <div
+                        class="w-12 h-12 rounded-full border border-white bg-cyan-400 flex items-center justify-center jewel-node shadow-[0_0_30px_rgba(34,211,238,0.6)] z-20">
+                        <span class="material-symbols-outlined text-black font-bold text-sm">all_inclusive</span>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:text-left order-2 md:order-3">
+                    <div
+                        class="p-8 border border-cyan-500/20 bg-gradient-to-b from-[#0A0A0A] to-cyan-950/20 backdrop-blur-xl rounded-sm hover:border-cyan-400 transition-all duration-500 hover:shadow-lg hover:shadow-cyan-500/10 group-hover:-translate-y-1">
+                        <h3 class="font-display text-3xl font-bold text-white mb-2">Escalado Exponencial</h3>
+                        <p class="text-xs font-mono text-cyan-400 mb-6 uppercase tracking-widest">Fase 04 // Dominio</p>
+                        <p class="text-slate-400 font-light leading-relaxed">
+                            Optimización basada en IA. Aumentamos el presupuesto en lo que funciona y cortamos lo que
+                            no. El objetivo deja de ser el ROI y pasa a ser la cuota de mercado total.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-[#020202] py-20 px-6 border-t border-white/5 relative overflow-hidden">
+        <div class="absolute inset-0 bg-grid-pattern opacity-5 pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 relative z-10">
+            <div class="max-w-xl text-center md:text-left">
+                <h3 class="font-display text-4xl font-black mb-4 text-white">Resultados, no promesas.</h3>
+                <p class="text-slate-500 text-lg font-light">
+                    Nuestro protocolo ha generado más de $50M en ingresos verificados para nuestros socios.
+                </p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a class="px-10 py-5 bg-white text-black font-black uppercase tracking-widest text-xs rounded-sm hover:bg-cyan-400 hover:text-black hover:shadow-neon transition-all text-center"
+                    href="#">
+                    Iniciar Protocolo
+                </a>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] font-bold text-slate-600 gap-6">
+            <div class="flex items-center gap-4">
+                <img alt="In Agencia Small Logo" class="h-5 w-auto opacity-50 grayscale invert"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoRBYv6bJp83lCQSCwJE4Mg6triHaVq27BwZVv_F8DKeaLw_XcQh60fLhuPuMH3dKoRNn27nUosaOy47vmufaV4N2avdZg5odWrBkcKOZ9a71EUJEHOIoOTkg-86GHb2G5kFqk84SpoUnRSSWQNmKIavjdy0KAqaNJem5J-vrJ2ueb_jnYAihf5y8YBWrcVJ_HTsX3xcbCmZ9NO5BlwyP70rpJhLAR-PnGn2ltlC4c7-IRO9JgwhS_nkSJvcKzt7P-8FG6aEZ26dOG" />
+                <span>© 2024 In Agencia. Elite Systems.</span>
+            </div>
+            <div class="flex gap-8">
+                <a class="hover:text-white transition-colors" href="#">Privacidad</a>
+                <a class="hover:text-white transition-colors" href="#">Términos</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

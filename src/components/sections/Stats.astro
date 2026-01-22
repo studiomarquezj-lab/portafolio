@@ -1,0 +1,64 @@
+---
+const stats = [
+  {
+    value: "+50",
+    label: "Clientes atendidos",
+    description: "En USA, LATAM y España",
+  },
+  {
+    value: "150x",
+    label: "Mejor ROI",
+    description: "Caso documentado B2B",
+  },
+  {
+    value: "$3M",
+    label: "Ventas generadas",
+    description: "En un solo funnel B2B",
+  },
+  {
+    value: "8-12x",
+    label: "ROI Promedio",
+    description: "En campañas Meta/Google",
+  },
+];
+---
+
+<section class="py-24 bg-secondary text-white relative overflow-hidden">
+  <div
+    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] glass-sphere rounded-full opacity-5 blur-xl"
+  >
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-8 relative z-10">
+    <div class="text-center mb-16 reveal">
+      <h2
+        class="text-4xl md:text-5xl font-display font-black mb-4 tracking-tight"
+      >
+        Números que <span class="font-serif-elite italic text-white/50"
+          >hablan</span>
+      </h2>
+      <p class="text-zinc-500 text-lg font-light">
+        La matemática no miente. Estos son los resultados que entregamos.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+      {
+        stats.map((stat, index) => (
+          <div
+            class="reveal text-center p-8 glass-card rounded-[2rem] transition-all duration-500 hover:bg-white/10 group"
+            style={`transition-delay: ${index * 100}ms`}
+          >
+            <div class="text-5xl md:text-6xl font-display font-black text-white mb-4 group-hover:scale-110 transition-transform">
+              {stat.value}
+            </div>
+            <div class="text-sm font-bold mb-2 uppercase tracking-[0.2em] text-white/60">
+              {stat.label}
+            </div>
+            <div class="text-zinc-500 text-sm">{stat.description}</div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

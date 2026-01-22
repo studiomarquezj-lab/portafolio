@@ -1,0 +1,85 @@
+---
+const values = [
+  {
+    icon: "🎯",
+    title: "Obsesión por Resultados",
+    description:
+      "No medimos likes ni alcance. Medimos cuánto invertiste y cuánto generaste. Todo lo demás es ruido.",
+  },
+  {
+    icon: "🔬",
+    title: "Data-Driven",
+    description:
+      "Las decisiones se toman con datos, no con opiniones. Probamos, medimos, iteramos. Sin ego.",
+  },
+  {
+    icon: "⚡",
+    title: "Velocidad de Ejecución",
+    description:
+      "Revisamos campañas cada 48-72 horas. No esperamos a fin de mes para ver qué pasó.",
+  },
+  {
+    icon: "🤝",
+    title: "Partners, No Proveedores",
+    description:
+      "Tu éxito es nuestro éxito. No cobramos por gestionar, ganamos cuando tú ganas.",
+  },
+  {
+    icon: "📊",
+    title: "Transparencia Total",
+    description:
+      "Acceso completo a todas las métricas. Reportes claros. Sin jerga innecesaria.",
+  },
+  {
+    icon: "🚀",
+    title: "Mentalidad de Crecimiento",
+    description:
+      "No nos conformamos con 'está funcionando'. Siempre buscamos el siguiente nivel.",
+  },
+];
+---
+
+<section class="py-24 bg-secondary">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+      <div
+        class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+        Nuestros Valores
+      </div>
+      <h2
+        class="text-5xl md:text-6xl font-display font-black text-white mb-6 tracking-tight"
+      >
+        En qué <span class="font-serif-elite italic text-white/50">creemos</span
+        >
+      </h2>
+      <p class="text-xl text-zinc-500 font-light">
+        Principios que guían cada decisión y cada centavo que invertimos por ti.
+      </p>
+    </div>
+
+    <!-- Values Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        values.map((value, index) => (
+          <div
+            class="reveal glass-card p-8 rounded-[2rem] transition-all duration-500 hover:bg-white/10 group"
+            style={`transition-delay: ${index * 100}ms`}
+          >
+            <div class="w-16 h-16 rounded-2xl ultra-thin-border flex items-center justify-center text-3xl mb-6 bg-white/5 group-hover:scale-110 transition-transform">
+              {value.icon}
+            </div>
+            <h3 class="text-xl font-display font-black text-white mb-4 group-hover:text-accent transition-colors">
+              {value.title}
+            </h3>
+            <p class="text-zinc-500 leading-relaxed group-hover:text-zinc-400 transition-colors">
+              {value.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

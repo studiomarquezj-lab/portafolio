@@ -1,0 +1,46 @@
+---
+const platforms = [
+  { name: "Meta Ads", icon: "M" },
+  { name: "Google Ads", icon: "G" },
+  { name: "TikTok Ads", icon: "T" },
+  { name: "LinkedIn Ads", icon: "L" },
+  { name: "YouTube", icon: "Y" },
+  { name: "WhatsApp", icon: "W" },
+  { name: "Zapier", icon: "Z" },
+  { name: "Make", icon: "MK" },
+];
+
+const items = [...platforms, ...platforms, ...platforms];
+---
+
+<section class="py-20 bg-secondary relative overflow-hidden">
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-secondary via-transparent to-secondary z-10 pointer-events-none"
+  >
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-8 mb-10">
+    <p
+      class="text-center text-white/20 text-[9px] font-bold uppercase tracking-[0.4em]"
+    >
+      Ecosistema Tecnológico de Escalamiento
+    </p>
+  </div>
+
+  <div class="marquee">
+    <div class="marquee-content gap-6 px-6">
+      {
+        items.map((platform) => (
+          <div class="reveal flex items-center gap-6 px-8 py-5 glass-card rounded-2xl shrink-0 transition-all duration-500 group">
+            <div class="w-12 h-12 rounded-xl ultra-thin-border flex items-center justify-center text-lg font-black text-accent bg-accent/10 group-hover:scale-110 transition-transform duration-500">
+              {platform.icon}
+            </div>
+            <span class="text-white/50 font-bold text-[10px] uppercase tracking-[0.2em] group-hover:text-white transition-colors">
+              {platform.name}
+            </span>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

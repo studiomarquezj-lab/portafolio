@@ -1,0 +1,195 @@
+---
+const isFor = [
+    {
+        icon: "check_circle",
+        title: "Empresas con Tracción",
+        description:
+            "Ya facturas, tienes un producto validado y buscas gasolina para un fuego que ya arde.",
+    },
+    {
+        icon: "trending_up",
+        title: "Mentalidad de Crecimiento",
+        description:
+            "Entiendes que el marketing es una inversión, no un gasto. Buscas ROI, no likes.",
+    },
+    {
+        icon: "precision_manufacturing",
+        title: "Operaciones Listas",
+        description:
+            "Tu equipo puede absorber un incremento masivo de demanda sin romper la experiencia de usuario.",
+    },
+    {
+        icon: "verified",
+        title: "Visión de Autoridad",
+        description:
+            "Deseas dominar tu nicho y convertirte en el referente indiscutible de tu industria.",
+    },
+];
+
+const isNotFor = [
+    {
+        icon: "cancel",
+        title: 'Buscadores de "Trucos Mágicos"',
+        description:
+            "Si buscas resultados de la noche a la mañana sin una estructura sólida detrás.",
+    },
+    {
+        icon: "money_off",
+        title: "Presupuestos de Supervivencia",
+        description:
+            'Si estás gastando tus últimos ahorros para "probar suerte" en el mundo digital.',
+    },
+    {
+        icon: "psychology_alt",
+        title: "Micro-management",
+        description:
+            'Si no confías en los datos y prefieres basar tus decisiones en "corazonadas" personales.',
+    },
+    {
+        icon: "hourglass_empty",
+        title: "Sin Oferta Clara",
+        description:
+            "Si aún no sabes qué vendes ni a quién, el marketing no resolverá tu problema de negocio.",
+    },
+];
+---
+
+<section class="min-h-screen" id="filtro">
+    <!-- Header (Stitch style archivo3) -->
+    <header class="py-20 px-8 text-center max-w-4xl mx-auto">
+        <span
+            class="reveal text-[10px] font-black tracking-[0.4em] uppercase opacity-50 mb-4 block"
+            >Filtro de Selección</span
+        >
+        <h2
+            class="reveal font-display text-5xl md:text-7xl font-black mb-6 leading-tight text-white"
+        >
+            No aceptamos a cualquiera.<br />
+            <span class="text-zinc-500">Solo a los mejores.</span>
+        </h2>
+        <p
+            class="reveal text-lg md:text-xl text-zinc-500 font-light max-w-2xl mx-auto"
+        >
+            Somos una boutique de crecimiento de alto ROI. Buscamos socios, no
+            clientes. Identifica si encajas con nuestra metodología antes de
+            aplicar.
+        </p>
+    </header>
+
+    <!-- Split Screen Layout (from archivo3) -->
+    <main class="grid lg:grid-cols-2 w-full">
+        <!-- YES Column -->
+        <section
+            class="bg-black text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center relative"
+        >
+            <div
+                class="absolute top-10 left-10 opacity-10 font-display text-9xl font-black select-none"
+            >
+                YES
+            </div>
+            <div class="relative z-10">
+                <div
+                    class="reveal mb-12 inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/10 rounded-full"
+                >
+                    <span
+                        class="w-2 h-2 rounded-full bg-green-500 animate-pulse"
+                    ></span>
+                    <span
+                        class="text-[10px] font-bold uppercase tracking-[0.3em]"
+                        >Apto para Escalar</span
+                    >
+                </div>
+                <h3
+                    class="reveal font-display text-4xl md:text-5xl font-black mb-12 tracking-tight"
+                >
+                    Para quién <br /><span class="text-white/40"
+                        >es In Agencia.</span
+                    >
+                </h3>
+                <ul class="space-y-8 max-w-md">
+                    {
+                        isFor.map((item, i) => (
+                            <li
+                                class="reveal flex gap-4"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <span class="material-symbols-outlined text-green-400 mt-1 shrink-0">
+                                    {item.icon}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-xl mb-1">
+                                        {item.title}
+                                    </p>
+                                    <p class="text-white/60 font-light leading-relaxed">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </li>
+                        ))
+                    }
+                </ul>
+                <a
+                    href="/contacto"
+                    class="reveal mt-16 group inline-flex items-center gap-4 text-lg font-black uppercase tracking-tighter border-b-2 border-white pb-2 hover:gap-6 transition-all"
+                >
+                    Califico para empezar <span
+                        class="material-symbols-outlined">arrow_forward</span
+                    >
+                </a>
+            </div>
+        </section>
+
+        <!-- NO Column -->
+        <section
+            class="bg-zinc-900 text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center relative"
+        >
+            <div
+                class="absolute top-10 right-10 opacity-10 font-display text-9xl font-black select-none"
+            >
+                NO
+            </div>
+            <div class="relative z-10">
+                <div
+                    class="reveal mb-12 inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 rounded-full"
+                >
+                    <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                    <span
+                        class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-60"
+                        >No somos compatibles</span
+                    >
+                </div>
+                <h3
+                    class="reveal font-display text-4xl md:text-5xl font-black mb-12 tracking-tight"
+                >
+                    Para quién <span class="text-zinc-500">no somos.</span>
+                </h3>
+                <ul class="space-y-8 max-w-md">
+                    {
+                        isNotFor.map((item, i) => (
+                            <li
+                                class="reveal flex gap-4"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <span class="material-symbols-outlined text-red-500 mt-1 shrink-0">
+                                    {item.icon}
+                                </span>
+                                <div>
+                                    <p class="font-bold text-xl mb-1">
+                                        {item.title}
+                                    </p>
+                                    <p class="text-zinc-400 font-light leading-relaxed">
+                                        {item.description}
+                                    </p>
+                                </div>
+                            </li>
+                        ))
+                    }
+                </ul>
+                <p class="reveal mt-16 text-zinc-500 italic font-light">
+                    * Si te identificas con alguno de estos puntos, te deseamos
+                    lo mejor, pero no somos la agencia que buscas.
+                </p>
+            </div>
+        </section>
+    </main>
+</section>

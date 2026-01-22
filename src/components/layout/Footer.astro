@@ -1,0 +1,129 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-secondary border-t ultra-thin-border py-20">
+    <div class="max-w-[1400px] mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 mb-20">
+            <!-- Brand Column -->
+            <div class="lg:col-span-5">
+                <div class="flex items-center gap-4 mb-8">
+                    <div
+                        class="w-10 h-10 rounded-full ultra-thin-border flex items-center justify-center bg-white/5"
+                    >
+                        <img
+                            src="/images/in-svg-blanco.svg"
+                            alt="In"
+                            class="h-5 w-auto"
+                        />
+                    </div>
+                    <span class="text-xl font-bold tracking-[0.3em] uppercase"
+                        >IN <span class="font-extralight opacity-60"
+                            >AGENCIA</span
+                        ></span
+                    >
+                </div>
+                <p
+                    class="text-xl font-light text-zinc-500 max-w-md mb-10 leading-relaxed"
+                >
+                    Diseñamos el futuro de las ventas digitales. <br />
+                    <span class="text-white font-serif-elite italic"
+                        >Resultados, no promesas.</span
+                    >
+                </p>
+                <div class="flex gap-4">
+                    <a
+                        href="https://instagram.com"
+                        class="h-12 w-12 rounded-xl ultra-thin-border flex items-center justify-center hover:bg-white hover:text-black transition-all duration-500 group"
+                    >
+                        <span
+                            class="material-symbols-outlined text-white/40 group-hover:text-black text-xl"
+                            >photo_camera</span
+                        >
+                    </a>
+                    <a
+                        href="https://linkedin.com"
+                        class="h-12 w-12 rounded-xl ultra-thin-border flex items-center justify-center hover:bg-white hover:text-black transition-all duration-500 group"
+                    >
+                        <span
+                            class="material-symbols-outlined text-white/40 group-hover:text-black text-xl"
+                            >work</span
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links Columns -->
+            <div class="lg:col-span-2 lg:col-start-8">
+                <h4
+                    class="text-[10px] font-black uppercase tracking-[0.3em] text-accent mb-8"
+                >
+                    Servicios
+                </h4>
+                <ul class="space-y-4">
+                    <li>
+                        <a
+                            href="/servicios/ads"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Ads de Performance</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/servicios/automatizacion"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Automatización</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/servicios/sistemas"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Sistemas y Funnels</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="lg:col-span-2">
+                <h4
+                    class="text-[10px] font-black uppercase tracking-[0.3em] text-accent mb-8"
+                >
+                    Agencia
+                </h4>
+                <ul class="space-y-4">
+                    <li>
+                        <a
+                            href="/nosotros"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Sobre In</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/casos"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Casos Reales</a>
+                    </li>
+                    <li>
+                        <a
+                            href="/contacto"
+                            class="text-zinc-500 hover:text-white transition-colors font-medium"
+                            >Diagnóstico</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+            class="pt-10 border-t ultra-thin-border flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.3em] text-white/20"
+        >
+            <p>© {currentYear} In Agencia. El éxito no es un accidente.</p>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white/50 transition-colors"
+                    >Privacidad</a
+                >
+                <a href="#" class="hover:text-white/50 transition-colors"
+                    >Términos</a
+                >
+            </div>
+        </div>
+    </div>
+</footer>

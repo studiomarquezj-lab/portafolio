@@ -1,0 +1,314 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/layout/Header.astro";
+import Footer from "../../components/layout/Footer.astro";
+import ServiceHero from "../../components/sections/ServiceHero.astro";
+import WhatWeDo from "../../components/sections/WhatWeDo.astro";
+import CtaSection from "../../components/sections/CtaSection.astro";
+
+const serviceData = {
+  features: [
+    {
+      title: "Respuesta inmediata",
+      description:
+        "Cuando un lead llega, recibe respuesta en minutos vía WhatsApp, Email o SMS. Automático. Sin que toques un botón.",
+    },
+    {
+      title: "Seguimiento sin manos",
+      description:
+        "Secuencias que nutren al lead con información relevante. Recordatorios para citas. Tú solo hablas con los que están listos para comprar.",
+    },
+    {
+      title: "CRM optimizado",
+      description:
+        "Configuramos tu CRM para que sepas exactamente dónde está cada lead en el proceso. Sin hojas de Excel obsoletas ni leads perdidos.",
+    },
+    {
+      title: "Integraciones totales",
+      description:
+        "Conectamos tus anuncios, landing pages, WhatsApp y CRM. Todo hablando entre sí, sin que copies nada manualmente.",
+    },
+    {
+      title: "Calificación automática",
+      description:
+        "Los leads se califican solos según su comportamiento. Tu equipo de ventas solo recibe los que valen la pena.",
+    },
+    {
+      title: "Reportes en tiempo real",
+      description:
+        "Dashboard donde ves cuántos leads entraron, cuántos contestaron, cuántas citas se agendaron. Todo en un solo lugar.",
+    },
+  ],
+  stats: [
+    { value: "<5min", label: "Tiempo de Respuesta" },
+    { value: "+85%", label: "Tasa de Contacto" },
+    { value: "24/7", label: "Disponibilidad" },
+    { value: "0", label: "Leads Perdidos" },
+  ],
+};
+
+const automationFlow = [
+  {
+    step: "01",
+    title: "LEAD ENTRA",
+    description: "Formulario, WhatsApp o landing page",
+    icon: "input",
+  },
+  {
+    step: "02",
+    title: "VALIDACIÓN",
+    description: "Verificación de datos en tiempo real",
+    icon: "verified",
+  },
+  {
+    step: "03",
+    title: "RESPUESTA",
+    description: "Mensaje automático en <2 minutos",
+    icon: "chat",
+  },
+  {
+    step: "04",
+    title: "NUTRICIÓN",
+    description: "Secuencia de emails/SMS personalizados",
+    icon: "autorenew",
+  },
+  {
+    step: "05",
+    title: "CALIFICACIÓN",
+    description: "Lead scoring basado en comportamiento",
+    icon: "star",
+  },
+  {
+    step: "06",
+    title: "HANDOFF",
+    description: "Solo leads calientes llegan a ventas",
+    icon: "person",
+  },
+];
+
+const evaluationCriteria = [
+  {
+    icon: "check_circle",
+    positive: true,
+    text: "Recibes más de 30 leads al mes",
+  },
+  {
+    icon: "check_circle",
+    positive: true,
+    text: "Tu equipo tarda más de 30 minutos en responder leads",
+  },
+  {
+    icon: "check_circle",
+    positive: true,
+    text: "Pierdes leads porque no hay seguimiento consistente",
+  },
+  {
+    icon: "check_circle",
+    positive: true,
+    text: "Tu ticket promedio justifica el costo de implementación",
+  },
+  {
+    icon: "cancel",
+    positive: false,
+    text: "Recibes menos de 10 leads al mes (no vale la pena)",
+  },
+  {
+    icon: "cancel",
+    positive: false,
+    text: "Tu proceso de venta es 100% presencial y no escalable",
+  },
+];
+---
+
+<Layout title="Automatización de Ventas | In Agencia">
+  <Header />
+  <main>
+    <ServiceHero
+      title="Automatización AI"
+      subtitle="Multiplica la capacidad de tu equipo sin contratar más personal. Sistemas inteligentes que trabajan por ti 24/7."
+      bgImage="/images/service_automation_bg.png"
+    />
+
+    <!-- Evaluation Section - FIRST -->
+    <section class="py-24 bg-secondary border-t ultra-thin-border">
+      <div class="max-w-[1400px] mx-auto px-8">
+        <div class="reveal text-center mb-16">
+          <div
+            class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+          >
+            <span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
+            Antes de Empezar
+          </div>
+          <h2
+            class="text-5xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-6"
+          >
+            ¿Realmente necesitas <span
+              class="font-serif-elite italic text-white/50 lowercase"
+              >automatización?</span
+            >
+          </h2>
+          <p class="text-xl text-zinc-500 font-light max-w-2xl mx-auto">
+            No todo negocio necesita automatizar. Primero evaluamos si tiene
+            sentido para ti. Honestidad brutal.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto glass-card p-10 md:p-16 rounded-[3rem]">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {
+              evaluationCriteria.map((criteria, i) => (
+                <div
+                  class={`reveal flex items-start gap-4 p-4 rounded-xl ${criteria.positive ? "bg-green-500/5" : "bg-red-500/5"}`}
+                  style={`transition-delay: ${i * 100}ms;`}
+                >
+                  <span
+                    class={`material-symbols-outlined mt-1 ${criteria.positive ? "text-green-400" : "text-red-400"}`}
+                  >
+                    {criteria.icon}
+                  </span>
+                  <span class="text-white">{criteria.text}</span>
+                </div>
+              ))
+            }
+          </div>
+
+          <div class="mt-10 pt-10 border-t ultra-thin-border text-center">
+            <p class="text-zinc-500 text-lg italic mb-6">
+              "Si no encajas en al menos 3 de los criterios positivos,
+              probablemente no necesitas esto todavía. Y te lo decimos de
+              frente."
+            </p>
+            <a
+              href="/contacto"
+              class="cta-elite-glow inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] px-10 py-5 rounded-full"
+            >
+              Evaluar mi caso gratis
+              <span class="material-symbols-outlined text-lg"
+                >arrow_outward</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Automation Flow Diagram -->
+    <section class="py-24 bg-secondary border-t ultra-thin-border">
+      <div class="max-w-[1400px] mx-auto px-8">
+        <div class="reveal text-center mb-16">
+          <h2
+            class="text-5xl md:text-6xl font-display font-black text-white uppercase tracking-tight mb-6"
+          >
+            Así se ve <span
+              class="font-serif-elite italic text-white/50 lowercase"
+              >tu máquina de ventas</span
+            >
+          </h2>
+          <p class="text-xl text-zinc-500 font-light max-w-2xl mx-auto">
+            Del lead al cierre, sin que tu equipo toque nada hasta el momento
+            crítico.
+          </p>
+        </div>
+
+        <!-- Flow Diagram -->
+        <div class="relative">
+          <!-- Connection Line -->
+          <div
+            class="hidden lg:block absolute top-1/2 left-0 right-0 h-[0.5px] bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-y-1/2 z-0"
+          >
+          </div>
+
+          <div
+            class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 relative z-10"
+          >
+            {
+              automationFlow.map((item, i) => (
+                <div
+                  class="reveal flex flex-col items-center text-center"
+                  style={`transition-delay: ${i * 100}ms;`}
+                >
+                  <div class="w-20 h-20 rounded-2xl glass-card flex items-center justify-center mb-6 group hover:bg-white/10 transition-all duration-500">
+                    <span class="material-symbols-outlined text-white/40 text-3xl group-hover:text-white transition-colors">
+                      {item.icon}
+                    </span>
+                  </div>
+                  <div class="text-[10px] font-black text-white/20 uppercase tracking-widest mb-2">
+                    {item.step}
+                  </div>
+                  <h4 class="text-sm font-display font-black text-white uppercase tracking-tight mb-2">
+                    {item.title}
+                  </h4>
+                  <p class="text-xs text-zinc-500">{item.description}</p>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 bg-secondary border-t ultra-thin-border">
+      <div class="max-w-[1400px] mx-auto px-8">
+        <div class="reveal text-center mb-12">
+          <h3
+            class="text-2xl font-display font-black text-white uppercase tracking-tight"
+          >
+            El impacto de automatizar tu proceso de ventas
+          </h3>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {
+            serviceData.stats.map((stat, i) => (
+              <div
+                class="reveal glass-card p-8 rounded-2xl text-center group hover:bg-white/10 transition-all duration-500"
+                style={`transition-delay: ${i * 100}ms;`}
+              >
+                <div class="text-4xl font-display font-black text-white mb-2 group-hover:scale-110 transition-transform">
+                  {stat.value}
+                </div>
+                <div class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold">
+                  {stat.label}
+                </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <WhatWeDo title="Sistemas que trabajan 24/7" items={serviceData.features} />
+
+    <!-- Testimonial -->
+    <section class="py-20 bg-secondary border-t ultra-thin-border">
+      <div class="max-w-[1400px] mx-auto px-8">
+        <div
+          class="reveal max-w-3xl mx-auto glass-card p-12 rounded-[2rem] text-center"
+        >
+          <div class="text-5xl text-white/10 font-serif mb-6">"</div>
+          <p class="text-2xl text-white font-light leading-relaxed mb-8 italic">
+            Antes perdíamos el 60% de los leads porque tardábamos horas en
+            responder. Ahora el sistema responde en 2 minutos y mi equipo solo
+            habla con gente interesada.
+          </p>
+          <div class="flex items-center justify-center gap-4">
+            <div
+              class="w-12 h-12 rounded-full glass-card flex items-center justify-center text-white font-bold"
+            >
+              M
+            </div>
+            <div class="text-left">
+              <div class="font-bold text-white">María L.</div>
+              <div class="text-zinc-500 text-sm">
+                Directora Comercial, Agencia de Seguros
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <CtaSection />
+  </main>
+  <Footer />
+</Layout>

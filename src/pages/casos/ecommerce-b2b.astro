@@ -1,0 +1,401 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/layout/Header.astro";
+import Footer from "../../components/layout/Footer.astro";
+import CtaSection from "../../components/sections/CtaSection.astro";
+
+const metrics = [
+    { value: "$3M", label: "INGRESOS", sublabel: "en 18 meses" },
+    { value: "150x", label: "ROI TOTAL", sublabel: "sobre inversión" },
+    { value: "$20K", label: "INVERSIÓN INICIAL", sublabel: "punto de partida" },
+    { value: "18", label: "MESES", sublabel: "para escalar" },
+];
+
+const timeline = [
+    {
+        month: "MES 1-2",
+        title: "AUDITORÍA Y SETUP",
+        description:
+            "Analizamos su funnel existente e identificamos fugas críticas. Implementamos rastreo avanzado y configuramos estructura de campañas.",
+        result: "Identificamos que su costo por lead era 3x superior al promedio de la industria.",
+    },
+    {
+        month: "MES 3-4",
+        title: "OPTIMIZACIÓN AGRESIVA",
+        description:
+            "Rediseñamos creativos y landing pages. Testing A/B de audiencias y copy. Eliminamos campañas no rentables.",
+        result: "Reducción del CPL en un 65%. Primeros leads calificados a escala.",
+    },
+    {
+        month: "MES 5-8",
+        title: "AUTOMATIZACIÓN DEL SEGUIMIENTO",
+        description:
+            "Implementamos secuencias de email y WhatsApp automatizadas. El equipo de ventas solo recibe leads calificados.",
+        result: "Tasa de conversión de lead a demo subió del 8% al 32%.",
+    },
+    {
+        month: "MES 9-18",
+        title: "ESCALADO VERTICAL",
+        description:
+            "Incremento gradual de presupuesto de $5K a $40K/mes. Expansión a nuevos canales y mercados.",
+        result: "Revenue mensual pasó de $20K a $250K. Crecimiento 10x.",
+    },
+];
+
+const galleryImages = [
+    { alt: "Dashboard de métricas", placeholder: "Dashboard" },
+    { alt: "Embudo de conversión", placeholder: "Funnel" },
+    { alt: "Creativos de anuncios", placeholder: "Ads" },
+    { alt: "Resultados de campaña", placeholder: "Resultados" },
+];
+---
+
+<Layout title="Caso de Estudio: E-commerce B2B | In Agencia">
+    <Header />
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[80vh] flex items-center pt-32 pb-20 overflow-hidden bg-secondary"
+        >
+            <div
+                class="absolute top-[15%] left-[10%] w-[600px] h-[600px] glass-sphere rounded-full opacity-10 blur-lg"
+            >
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[5%] w-[800px] h-[800px] glass-sphere rounded-full opacity-5 blur-xl"
+            >
+            </div>
+
+            <div class="max-w-[1400px] mx-auto px-8 relative z-10">
+                <div class="max-w-4xl">
+                    <a
+                        href="/casos"
+                        class="reveal inline-flex items-center gap-2 text-zinc-500 mb-8 hover:text-white transition-colors text-sm"
+                    >
+                        <span class="material-symbols-outlined text-lg"
+                            >arrow_back</span
+                        >
+                        Volver a Casos
+                    </a>
+
+                    <div
+                        class="reveal inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-full ultra-thin-border bg-white/5 text-white/60 text-[10px] font-bold uppercase tracking-[0.3em]"
+                    >
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-400"
+                        ></span>
+                        B2B • Servicios Profesionales
+                    </div>
+
+                    <h1
+                        class="reveal text-5xl md:text-7xl lg:text-8xl font-display font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase mercury-text"
+                    >
+                        De $20K a $3,000,000 <span
+                            class="font-serif-elite italic lowercase text-white/50"
+                            >en 18 meses</span
+                        >
+                    </h1>
+
+                    <p
+                        class="reveal text-xl md:text-2xl text-zinc-500 mb-12 leading-relaxed max-w-3xl font-light"
+                        style="transition-delay: 200ms;"
+                    >
+                        Empresa B2B de servicios profesionales con tickets altos
+                        que necesitaba prospectos calificados, no curiosos.
+                        Implementamos un sistema de filtrado quirúrgico.
+                    </p>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div
+                    class="reveal grid grid-cols-2 md:grid-cols-4 gap-6 mt-12"
+                    style="transition-delay: 400ms;"
+                >
+                    {
+                        metrics.map((metric) => (
+                            <div class="p-6 glass-card rounded-2xl text-center">
+                                <div class="text-3xl md:text-4xl font-display font-black text-white mb-2">
+                                    {metric.value}
+                                </div>
+                                <div class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold">
+                                    {metric.label}
+                                </div>
+                                <div class="text-zinc-500 text-xs mt-1">
+                                    {metric.sublabel}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        Video del <span
+                            class="font-serif-elite italic text-white/50"
+                            >Caso</span
+                        >
+                    </h2>
+                    <p class="text-zinc-500 text-lg font-light">
+                        Mira la historia completa en menos de 3 minutos
+                    </p>
+                </div>
+
+                <!-- Video Placeholder -->
+                <div
+                    class="reveal max-w-4xl mx-auto aspect-video glass-card rounded-[2rem] flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer"
+                >
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent group-hover:from-white/10 transition-all"
+                    >
+                    </div>
+                    <div
+                        class="w-24 h-24 rounded-full ultra-thin-border flex items-center justify-center bg-white/10 group-hover:bg-white/20 group-hover:scale-110 transition-all duration-500 z-10"
+                    >
+                        <span
+                            class="material-symbols-outlined text-white text-5xl ml-2"
+                            >play_arrow</span
+                        >
+                    </div>
+                    <p
+                        class="mt-8 text-zinc-500 text-sm uppercase tracking-widest z-10"
+                    >
+                        Video del caso de estudio
+                    </p>
+                    <p class="text-[10px] text-white/20 mt-2 z-10">
+                        [Placeholder - Añadir video aquí]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="reveal">
+                        <h2
+                            class="text-3xl md:text-4xl font-display font-black text-white mb-8 tracking-tight"
+                        >
+                            El <span
+                                class="font-serif-elite italic text-white/50"
+                                >Desafío</span
+                            >
+                        </h2>
+                        <div
+                            class="space-y-6 text-lg text-zinc-500 leading-relaxed"
+                        >
+                            <p>
+                                Una empresa de consultoría B2B con un ticket
+                                promedio de $15,000 estaba gastando $5,000/mes
+                                en Google Ads sin resultados tangibles. Recibían
+                                muchos leads, pero ninguno convertía.
+                            </p>
+                            <p>
+                                El problema no era el volumen, era la calidad.
+                                Atraían curiosos y estudiantes, no tomadores de
+                                decisiones con presupuesto.
+                            </p>
+                            <p class="text-white font-bold">
+                                Su ROI sobre inversión publicitaria era
+                                negativo. Literalmente, perdían dinero.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal glass-card p-10 rounded-[2rem]"
+                        style="transition-delay: 200ms;"
+                    >
+                        <h3
+                            class="text-xl font-display font-black text-white mb-6 uppercase tracking-tight"
+                        >
+                            Situación Inicial
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="material-symbols-outlined text-red-400 mt-1"
+                                    >cancel</span
+                                >
+                                <span class="text-zinc-400"
+                                    >Generando 50+ leads/mes, 0 conversiones</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="material-symbols-outlined text-red-400 mt-1"
+                                    >cancel</span
+                                >
+                                <span class="text-zinc-400"
+                                    >CPL de $100 (3x superior al benchmark)</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="material-symbols-outlined text-red-400 mt-1"
+                                    >cancel</span
+                                >
+                                <span class="text-zinc-400"
+                                    >Equipo de ventas frustrado con leads no
+                                    calificados</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <span
+                                    class="material-symbols-outlined text-red-400 mt-1"
+                                    >cancel</span
+                                >
+                                <span class="text-zinc-400"
+                                    >Sin sistema de seguimiento automatizado</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMAGES GALLERY -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        Capturas del <span
+                            class="font-serif-elite italic text-white/50"
+                            >Proyecto</span
+                        >
+                    </h2>
+                    <p class="text-zinc-500 text-lg font-light">
+                        Evidencia visual de la transformación
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    {
+                        galleryImages.map((img, i) => (
+                            <div
+                                class="reveal aspect-square glass-card rounded-2xl flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all duration-500"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <span class="material-symbols-outlined text-white/20 text-5xl group-hover:text-white/40 transition-colors mb-4">
+                                    image
+                                </span>
+                                <p class="text-zinc-500 text-sm font-bold">
+                                    {img.placeholder}
+                                </p>
+                                <p class="text-[10px] text-white/20 mt-1">
+                                    [Placeholder]
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-16">
+                    <h2
+                        class="text-4xl md:text-5xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        La <span class="font-serif-elite italic text-white/50"
+                            >Transformación</span
+                        >
+                    </h2>
+                    <p
+                        class="text-zinc-500 text-xl font-light max-w-2xl mx-auto"
+                    >
+                        El roadmap exacto que seguimos para multiplicar su
+                        revenue por 150.
+                    </p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-8">
+                    {
+                        timeline.map((phase, i) => (
+                            <div
+                                class="reveal glass-card p-8 md:p-12 rounded-[2rem] group hover:bg-white/10 transition-all duration-500"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <div class="flex flex-col md:flex-row gap-8">
+                                    <div class="shrink-0">
+                                        <span class="text-[10px] font-black text-white/30 uppercase tracking-[0.3em]">
+                                            {phase.month}
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow">
+                                        <h3 class="text-2xl font-display font-black text-white mb-4 uppercase tracking-tight group-hover:text-accent transition-colors">
+                                            {phase.title}
+                                        </h3>
+                                        <p class="text-zinc-500 text-lg leading-relaxed mb-6">
+                                            {phase.description}
+                                        </p>
+                                        <div class="flex items-start gap-3 p-4 rounded-xl bg-white/5 ultra-thin-border">
+                                            <span class="material-symbols-outlined text-green-400 mt-1">
+                                                check_circle
+                                            </span>
+                                            <span class="text-white font-bold">
+                                                {phase.result}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div
+                    class="reveal max-w-4xl mx-auto glass-card p-12 md:p-16 rounded-[3rem] text-center"
+                >
+                    <h2
+                        class="text-4xl md:text-5xl font-display font-black text-white mb-8 tracking-tight"
+                    >
+                        Resultado <span
+                            class="font-serif-elite italic text-green-400"
+                            >Final</span
+                        >
+                    </h2>
+                    <div
+                        class="text-7xl md:text-9xl font-display font-black text-white mb-8"
+                    >
+                        150x <span class="text-4xl text-white/40">ROI</span>
+                    </div>
+                    <p
+                        class="text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12"
+                    >
+                        Una inversión inicial de $20K en publicidad generó
+                        $3,000,000 en contratos cerrados en 18 meses.
+                    </p>
+                    <a
+                        href="/contacto"
+                        class="cta-elite-glow inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] px-12 py-6 rounded-full"
+                    >
+                        ¿Quieres resultados similares?
+                        <span class="material-symbols-outlined text-lg"
+                            >arrow_outward</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <CtaSection />
+    </main>
+    <Footer />
+</Layout>

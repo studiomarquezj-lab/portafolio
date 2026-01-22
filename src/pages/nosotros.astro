@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import AboutHero from '../components/sections/AboutHero.astro';
+import Story from '../components/sections/Story.astro';
+import Values from '../components/sections/Values.astro';
+import Team from '../components/sections/Team.astro';
+import Stats from '../components/sections/Stats.astro';
+import Manifesto from '../components/sections/Manifesto.astro';
+import CtaSection from '../components/sections/CtaSection.astro';
+---
+
+<Layout title="Sobre In Agencia">
+  <Header />
+  <main>
+    <AboutHero />
+    <Story />
+    <Values />
+    <Stats />
+    <Team />
+    <Manifesto />
+    <CtaSection />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/layout/Header.astro';
+import Footer from '../../components/layout/Footer.astro';
+import ServiceHero from '../../components/sections/ServiceHero.astro';
+import ServiceStats from '../../components/sections/ServiceStats.astro';
+import WhatWeDo from '../../components/sections/WhatWeDo.astro';
+import ServiceInclusions from '../../components/sections/ServiceInclusions.astro';
+import Testimonial from '../../components/sections/Testimonial.astro';
+import CtaSection from '../../components/sections/CtaSection.astro';
+
+const serviceData = {
+  title: "Tu web no es un folleto, es una máquina",
+  subtitle: "Una web sin estrategia de conversión es un gasto. Diseñamos sistemas completos de conversión que pagan tu nómina.",
+  features: [
+    {
+      title: "Landing Pages de alta conversión",
+      description: "Cada elemento tiene un propósito: capturar atención, manejar objeciones y generar clics reales. Sin diseño que solo se 've bonito'."
+    },
+    {
+      title: "Funnels de venta completos",
+      description: "Diseñamos el camino completo: Anuncio → Landing → Formulario → Nurturing → Venta. Cada paso optimizado para no perder leads."
+    },
+    {
+      title: "Páginas de servicio vendedoras",
+      description: "Estructuramos tu oferta para que el prospecto entienda qué haces, por qué eres diferente y cómo contratarte en 5 segundos."
+    },
+    {
+      title: "Optimización por datos",
+      description: "Mapas de calor, grabaciones y análisis de comportamiento. Sabemos exactamente dónde se van los visitantes y lo arreglamos."
+    },
+    {
+      title: "Velocidad y SEO técnico",
+      description: "Páginas que cargan rápido y están optimizadas para Google. No sirve de nada tener tráfico si tu página tarda 8 segundos."
+    },
+    {
+      title: "A/B Testing continuo",
+      description: "Probamos versiones diferentes de cada página. Los datos deciden, no las opiniones. Lo que convierte mejor, se queda."
+    }
+  ],
+  stats: [
+    { value: "+180%", label: "Tasa de Conversión", highlight: true },
+    { value: "<2s", label: "Carga de Página", highlight: false },
+    { value: "-50%", label: "Tasa de Rebote", highlight: false },
+    { value: "+300%", label: "Tiempo en Sitio", highlight: false }
+  ],
+  testimonial: {
+    quote: "Nuestra web anterior era bonita pero no vendía nada. La nueva landing genera 15-20 leads calificados por semana con el mismo tráfico.",
+    author: "Carlos P.",
+    role: "Fundador",
+    company: "Consultora de Negocios"
+  }
+};
+---
+
+<Layout title="Sistemas y Funnels | In Agencia">
+  <Header />
+  	<main>
+		<ServiceHero 
+			title="Sistemas y Funnels" 
+			subtitle="Construimos la maquinaria digital que convierte desconocidos en clientes leales. Arquitectura de ventas de alta ingeniería."
+			bgImage="/images/hero_abstract_growth.png"
+		/>
+    <WhatWeDo title="Diseño orientado a resultados" items={serviceData.features} />
+    <ServiceInclusions />
+    <Testimonial testimonial={serviceData.testimonial} />
+    <CtaSection />
+  </main>
+  <Footer />
+</Layout>

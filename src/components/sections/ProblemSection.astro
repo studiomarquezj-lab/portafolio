@@ -1,0 +1,131 @@
+---
+const problems = [
+    {
+        id: "01",
+        text: "Reportes llenos de métricas de vanidad que no pagan facturas.",
+        icon: "cancel",
+    },
+    {
+        id: "02",
+        text: "Estrategias genéricas de 'copia y pega' sin alma competitiva.",
+        icon: "content_copy",
+    },
+    {
+        id: "03",
+        text: "Falta de claridad absoluta sobre tu Retorno de Inversión.",
+        icon: "visibility_off",
+    },
+    {
+        id: "04",
+        text: "Promesas de 'branding' que solo queman tu presupuesto.",
+        icon: "local_fire_department",
+    },
+];
+---
+
+<section class="py-32 bg-secondary relative overflow-hidden">
+    <!-- Decorative background -->
+    <div
+        class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+    >
+    </div>
+    <div
+        class="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"
+    >
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 items-start">
+            <!-- Left: Title -->
+            <div class="lg:col-span-12 mb-12 text-center lg:text-left">
+                <div
+                    class="reveal inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-red-500/5 text-red-400 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+                >
+                    <span class="w-1.5 h-1.5 rounded-full bg-red-500"></span>
+                    La Cruda Realidad
+                </div>
+                <h2
+                    class="reveal text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter uppercase max-w-5xl"
+                >
+                    El 90% de las agencias <br />
+                    están <span
+                        class="text-white/20 font-serif-elite italic lowercase"
+                        >quemando tu dinero</span
+                    >
+                </h2>
+            </div>
+
+            <!-- Main Column: Problem List -->
+            <div class="lg:col-span-7 space-y-10">
+                {
+                    problems.map((problem, i) => (
+                        <div
+                            class="reveal flex flex-col md:flex-row gap-6 md:items-center group"
+                            style={`transition-delay: ${i * 100}ms;`}
+                        >
+                            <div class="text-4xl md:text-5xl font-display font-black text-white/5 group-hover:text-red-500/20 transition-colors duration-500">
+                                {problem.id}
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <span class="material-symbols-outlined text-red-500/60 group-hover:text-red-400 transition-colors mt-1">
+                                    {problem.icon}
+                                </span>
+                                <p class="text-xl md:text-2xl font-medium text-zinc-500 group-hover:text-white transition-colors duration-500 max-w-xl">
+                                    {problem.text}
+                                </p>
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+
+            <!-- Right Column: Statement Card -->
+            <div class="lg:col-span-5 lg:sticky lg:top-40">
+                <div
+                    class="reveal p-10 md:p-14 rounded-[2.5rem] ultra-thin-border glass-card relative overflow-hidden"
+                    style="transition-delay: 400ms;"
+                >
+                    <div
+                        class="absolute -top-20 -right-20 w-64 h-64 bg-accent/10 rounded-full blur-[100px]"
+                    >
+                    </div>
+
+                    <h3
+                        class="text-2xl md:text-3xl font-display font-medium text-white mb-8 leading-tight relative z-10"
+                    >
+                        "En <span
+                            class="text-accent font-black font-serif-elite italic"
+                            >In Agencia</span
+                        >, operamos con transparencia quirúrgica."
+                    </h3>
+
+                    <p
+                        class="text-zinc-500 text-lg mb-10 italic leading-relaxed relative z-10"
+                    >
+                        Eliminamos el 'ruido' del marketing tradicional para
+                        enfocarnos únicamente en la variable que importa:
+                    </p>
+
+                    <div
+                        class="p-8 rounded-2xl bg-white/5 ultra-thin-border text-center relative z-10"
+                    >
+                        <span
+                            class="block text-[10px] font-black uppercase tracking-[0.4em] text-accent mb-3"
+                            >KPI Maestro</span
+                        >
+                        <span
+                            class="text-4xl md:text-5xl font-display font-black text-white tracking-tight"
+                            >REVENUE NETO</span
+                        >
+                    </div>
+
+                    <p
+                        class="mt-10 text-[10px] font-bold uppercase tracking-[0.3em] text-white/20 text-center italic relative z-10"
+                    >
+                        Sin retorno no hay futuro. Punto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

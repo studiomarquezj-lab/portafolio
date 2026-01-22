@@ -1,0 +1,75 @@
+---
+const guarantees = [
+  {
+    title: "TRANSPARENCIA QUIRÚRGICA",
+    description:
+      "Acceso total a tus cuentas publicitarias y datos en tiempo real. Si te vas, te llevas tu histórico. Sin letra pequeña.",
+    icon: "verified_user",
+  },
+  {
+    title: "AGILIDAD OPERATIVA",
+    description:
+      "Ajustamos tu sistema cada 48 horas. Sin esperar reportes mensuales. Si algo no vuela, lo matamos al instante.",
+    icon: "bolt",
+  },
+  {
+    title: "HONESTIDAD BRUTAL",
+    description:
+      "Si tu producto tiene un techo comercial o el mercado no responde, te lo decimos. Preferimos la verdad al fee.",
+    icon: "verified",
+  },
+  {
+    title: "FOCO EN NET REVENUE",
+    description:
+      "No celebramos clicks. Celebramos dinero en tu banco. Es la única métrica de éxito que aceptamos.",
+    icon: "attach_money",
+  },
+];
+---
+
+<section class="py-32 bg-secondary relative overflow-hidden" id="garantias">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <div class="reveal max-w-4xl mb-20">
+      <div
+        class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        Nuestros Compromisos
+      </div>
+      <h2
+        class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter uppercase mb-6"
+      >
+        La Garantía <span
+          class="font-serif-elite italic text-white/20 lowercase">"In-In"</span
+        >
+      </h2>
+      <p class="text-xl md:text-2xl text-zinc-500 font-light max-w-2xl">
+        No somos una agencia. Somos tus socios financieros. Si tú no ganas,
+        nosotros no existimos.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+      {
+        guarantees.map((item, i) => (
+          <div
+            class="reveal group p-10 md:p-14 rounded-[2.5rem] glass-card transition-all duration-700"
+            style={`transition-delay: ${i * 100}ms;`}
+          >
+            <div class="w-16 h-16 rounded-2xl ultra-thin-border flex items-center justify-center mb-10 group-hover:scale-110 transition-transform duration-500 bg-accent/10">
+              <span class="material-symbols-outlined text-accent text-2xl">
+                {item.icon}
+              </span>
+            </div>
+            <h3 class="text-2xl font-display font-black text-white mb-6 uppercase tracking-tight group-hover:text-accent transition-colors">
+              {item.title}
+            </h3>
+            <p class="text-zinc-500 text-xl leading-relaxed group-hover:text-zinc-400 transition-colors">
+              {item.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

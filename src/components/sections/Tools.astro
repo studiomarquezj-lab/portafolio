@@ -1,0 +1,32 @@
+---
+const tools = [
+  { name: "GoHighLevel", description: "CRM & Embudos", icon: "G" },
+  { name: "Clientify", description: "Ventas & Marketing", icon: "C" },
+  { name: "Make", description: "Automatización Pro", icon: "M" },
+  { name: "Zapier", description: "Conexiones rápidas", icon: "Z" },
+  { name: "ActiveCampaign", description: "Email Nurturing", icon: "A" }
+];
+---
+
+<section class="py-24 bg-gray-50">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-display font-bold text-blue-900 mb-16 uppercase reveal">
+      Sistemas que crecen contigo
+    </h2>
+    
+    <div class="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
+      {tools.map((tool, index) => (
+        <div class="px-10 py-8 rounded-2xl bg-white shadow-sm border border-white hover:border-blue-200 transition-all flex flex-col items-center reveal" style={`transition-delay: ${index * 100}ms`}>
+          <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-xl font-bold text-blue-600 mb-4">
+            {tool.icon}
+          </div>
+          <h3 class="text-lg font-bold text-blue-900 mb-1">{tool.name}</h3>
+          <p class="text-gray-400 text-xs uppercase tracking-widest">{tool.description}</p>
+        </div>
+      ))}
+    </div>
+    <p class="mt-12 text-gray-500 font-medium italic reveal">
+      (O la que ya uses — nos adaptamos a tu stack actual)
+    </p>
+  </div>
+</section>

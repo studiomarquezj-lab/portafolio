@@ -1,0 +1,105 @@
+---
+import GeometricBackground from '../ui/GeometricBackground.astro';
+import Button from '../ui/Button.astro';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "¿Qué incluye nuestro servicio?",
+  subtitle = "Un sistema completo diseñado para maximizar tus resultados"
+} = Astro.props;
+
+const inclusions = [
+  {
+    category: "Estrategia",
+    items: [
+      "Análisis inicial de tu negocio y competencia",
+      "Definición de buyer persona y customer journey",
+      "Estrategia de campaña personalizada",
+      "Planificación de presupuesto y objetivos",
+      "Roadmap de 90 días con hitos claros"
+    ]
+  },
+  {
+    category: "Ejecución",
+    items: [
+      "Configuración completa de cuentas publicitarias",
+      "Creación de creativos y copywriting",
+      "Desarrollo de landing pages optimizadas",
+      "Implementación de tracking y píxeles",
+      "A/B testing continuo de anuncios"
+    ]
+  },
+  {
+    category: "Optimización",
+    items: [
+      "Revisión de campañas cada 48-72 horas",
+      "Ajuste de pujas y audiencias",
+      "Optimización de creativos por performance",
+      "Escalado progresivo de presupuesto",
+      "Identificación de oportunidades de mejora"
+    ]
+  },
+  {
+    category: "Reportes",
+    items: [
+      "Dashboard en tiempo real",
+      "Reporte semanal de performance",
+      "Análisis mensual de ROI",
+      "Reuniones de revisión quincenal",
+      "Documentación de aprendizajes"
+    ]
+  }
+];
+---
+
+<section class="py-24 relative overflow-hidden">
+  <GeometricBackground variant="light" intensity="low" />
+  
+  <div class="container mx-auto px-6 relative z-10">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+      <span class="inline-block px-4 py-1.5 bg-blue-100 border border-blue-200 rounded-full text-primary font-bold text-xs tracking-widest uppercase mb-6">
+        Todo Incluido
+      </span>
+      <h2 class="text-4xl md:text-5xl font-display font-bold text-secondary mb-6">
+        {title}
+      </h2>
+      <p class="text-xl text-gray-500">
+        {subtitle}
+      </p>
+    </div>
+    
+    <!-- Inclusions Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {inclusions.map((group, groupIndex) => (
+        <div class="reveal" style={`transition-delay: ${groupIndex * 100}ms`}>
+          <div class="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm h-full">
+            <h3 class="text-xl font-display font-bold text-primary mb-6 pb-4 border-b border-gray-100">
+              {group.category}
+            </h3>
+            <ul class="space-y-4">
+              {group.items.map((item) => (
+                <li class="flex items-start gap-3 text-gray-600">
+                  <span class="w-5 h-5 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-xs shrink-0 mt-0.5">✓</span>
+                  <span class="text-sm">{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <!-- Bottom CTA -->
+    <div class="mt-16 text-center reveal">
+      <p class="text-gray-500 mb-6">¿Tienes preguntas sobre lo que incluye?</p>
+      <Button href="/contacto" variant="outline">
+        Hablar con un especialista
+      </Button>
+    </div>
+  </div>
+</section>

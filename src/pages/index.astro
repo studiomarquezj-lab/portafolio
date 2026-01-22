@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
+import Hero from '../components/sections/Hero.astro';
+import Marquee from '../components/sections/Marquee.astro';
+import ClientLogos from '../components/sections/ClientLogos.astro';
+import ProblemSection from '../components/sections/ProblemSection.astro';
+import SolutionSteps from '../components/sections/SolutionSteps.astro';
+import ForWho from '../components/sections/ForWho.astro';
+import CaseStudies from '../components/sections/CaseStudies.astro';
+import WhyUs from '../components/sections/WhyUs.astro';
+import ProcessTimeline from '../components/sections/ProcessTimeline.astro';
+import Guarantees from '../components/sections/Guarantees.astro';
+import CtaSection from '../components/sections/CtaSection.astro';
+---
+
+<Layout 
+	title="Generamos leads que se convierten en ventas"
+	description="Especialistas en Ads de Performance, Automatización y Sistemas de Venta para escalar negocios en USA y LATAM."
+>
+	<Header />
+	<main>
+		<Hero 
+			title="Generamos leads que se convierten en ventas"
+			subtitle="No likes. No 'alcance'. Dinero real. Sistema probado con +50 clientes en USA y LATAM."
+			ctaText="Ver si calificas"
+			ctaHref="/contacto"
+		/>
+		<Marquee />
+		<ClientLogos />
+		<div class="relative">
+			<ProblemSection />
+		</div>
+		<SolutionSteps />
+		<ForWho />
+		<CaseStudies />
+		<WhyUs />
+		<ProcessTimeline />
+		<Guarantees />
+		<CtaSection />
+	</main>
+	<Footer />
+</Layout>

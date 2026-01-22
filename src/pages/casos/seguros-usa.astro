@@ -1,0 +1,405 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/layout/Header.astro";
+import Footer from "../../components/layout/Footer.astro";
+import CtaSection from "../../components/sections/CtaSection.astro";
+
+const metrics = [
+    {
+        value: "+60%",
+        label: "CONTACTABILIDAD",
+        sublabel: "leads que contestan",
+    },
+    { value: "-40%", label: "COSTO POR LEAD", sublabel: "reducción" },
+    { value: "3x", label: "ROI", sublabel: "sobre inversión" },
+    { value: "120", label: "DÍAS", sublabel: "para resultados" },
+];
+
+const challenges = [
+    "Leads que nunca contestaban el teléfono",
+    "Agentes perdiendo tiempo con datos incorrectos",
+    "Competencia feroz en el mercado de seguros USA",
+    "Costo por lead de $45 (insostenible)",
+];
+
+const solutions = [
+    {
+        title: "LEAD SCORING AVANZADO",
+        description:
+            "Implementamos un sistema de puntuación en tiempo real que descartaba leads de baja intención antes de llegar al equipo de ventas.",
+        icon: "filter_alt",
+    },
+    {
+        title: "VALIDACIÓN INSTANTÁNEA",
+        description:
+            "Integración con bases de datos para verificar números de teléfono y emails en el momento del opt-in.",
+        icon: "verified",
+    },
+    {
+        title: "SECUENCIAS MULTICANAL",
+        description:
+            "SMS + Email + Llamada automatizada en los primeros 5 minutos después del registro. Speed-to-lead es todo en seguros.",
+        icon: "schedule",
+    },
+    {
+        title: "OPTIMIZACIÓN DE CREATIVOS",
+        description:
+            "Testing continuo de mensajes que precalifican desde el anuncio. 'Si no tienes auto, no aplica' eliminaba el ruido.",
+        icon: "loyalty",
+    },
+];
+
+const galleryImages = [
+    { alt: "Landing page de captación", placeholder: "Landing" },
+    { alt: "Dashboard de leads", placeholder: "Dashboard" },
+    { alt: "Flujo de automatización", placeholder: "Automation" },
+    { alt: "Reporte de resultados", placeholder: "Reportes" },
+    { alt: "Creativos de anuncios", placeholder: "Ads" },
+    { alt: "Panel de seguimiento", placeholder: "Tracking" },
+];
+---
+
+<Layout title="Caso de Estudio: Seguros USA | In Agencia">
+    <Header />
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative min-h-[80vh] flex items-center pt-32 pb-20 overflow-hidden bg-secondary"
+        >
+            <div
+                class="absolute top-[15%] left-[10%] w-[600px] h-[600px] glass-sphere rounded-full opacity-10 blur-lg"
+            >
+            </div>
+            <div
+                class="absolute bottom-[-10%] right-[5%] w-[800px] h-[800px] glass-sphere rounded-full opacity-5 blur-xl"
+            >
+            </div>
+
+            <div class="max-w-[1400px] mx-auto px-8 relative z-10">
+                <div class="max-w-4xl">
+                    <a
+                        href="/casos"
+                        class="reveal inline-flex items-center gap-2 text-zinc-500 mb-8 hover:text-white transition-colors text-sm"
+                    >
+                        <span class="material-symbols-outlined text-lg"
+                            >arrow_back</span
+                        >
+                        Volver a Casos
+                    </a>
+
+                    <div
+                        class="reveal inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-full ultra-thin-border bg-white/5 text-white/60 text-[10px] font-bold uppercase tracking-[0.3em]"
+                    >
+                        <span class="w-1.5 h-1.5 rounded-full bg-green-400"
+                        ></span>
+                        Lead Gen • Seguros USA
+                    </div>
+
+                    <h1
+                        class="reveal text-5xl md:text-7xl lg:text-8xl font-display font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase mercury-text"
+                    >
+                        Leads que sí contestan <span
+                            class="font-serif-elite italic lowercase text-white/50"
+                            >el teléfono</span
+                        >
+                    </h1>
+
+                    <p
+                        class="reveal text-xl md:text-2xl text-zinc-500 mb-12 leading-relaxed max-w-3xl font-light"
+                        style="transition-delay: 200ms;"
+                    >
+                        Agencia de seguros en Miami luchaba con leads que nunca
+                        respondían. Implementamos un sistema de filtrado y
+                        respuesta inmediata que transformó sus resultados.
+                    </p>
+                </div>
+
+                <!-- Metrics Grid -->
+                <div
+                    class="reveal grid grid-cols-2 md:grid-cols-4 gap-6 mt-12"
+                    style="transition-delay: 400ms;"
+                >
+                    {
+                        metrics.map((metric) => (
+                            <div class="p-6 glass-card rounded-2xl text-center">
+                                <div class="text-3xl md:text-4xl font-display font-black text-white mb-2">
+                                    {metric.value}
+                                </div>
+                                <div class="text-white/40 text-[10px] uppercase tracking-[0.2em] font-bold">
+                                    {metric.label}
+                                </div>
+                                <div class="text-zinc-500 text-xs mt-1">
+                                    {metric.sublabel}
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO SECTION -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        Testimonial del <span
+                            class="font-serif-elite italic text-white/50"
+                            >Cliente</span
+                        >
+                    </h2>
+                    <p class="text-zinc-500 text-lg font-light">
+                        Escucha directamente del cliente cómo transformamos su
+                        negocio
+                    </p>
+                </div>
+
+                <!-- Video Placeholder -->
+                <div
+                    class="reveal max-w-4xl mx-auto aspect-video glass-card rounded-[2rem] flex flex-col items-center justify-center relative overflow-hidden group cursor-pointer"
+                >
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent group-hover:from-white/10 transition-all"
+                    >
+                    </div>
+                    <div
+                        class="w-24 h-24 rounded-full ultra-thin-border flex items-center justify-center bg-white/10 group-hover:bg-white/20 group-hover:scale-110 transition-all duration-500 z-10"
+                    >
+                        <span
+                            class="material-symbols-outlined text-white text-5xl ml-2"
+                            >play_arrow</span
+                        >
+                    </div>
+                    <p
+                        class="mt-8 text-zinc-500 text-sm uppercase tracking-widest z-10"
+                    >
+                        Video testimonial del cliente
+                    </p>
+                    <p class="text-[10px] text-white/20 mt-2 z-10">
+                        [Placeholder - Añadir video aquí]
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Challenge Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="reveal">
+                        <h2
+                            class="text-3xl md:text-4xl font-display font-black text-white mb-8 tracking-tight"
+                        >
+                            El <span
+                                class="font-serif-elite italic text-white/50"
+                                >Problema</span
+                            >
+                        </h2>
+                        <div
+                            class="space-y-6 text-lg text-zinc-500 leading-relaxed"
+                        >
+                            <p>
+                                Una agencia de seguros en Miami generaba 200+
+                                leads mensuales a través de Facebook Ads (auto,
+                                vida, salud), pero solo el 15% contestaba cuando
+                                los agentes llamaban.
+                            </p>
+                            <p>
+                                El equipo de ventas pasaba el 85% de su tiempo
+                                dejando mensajes de voz y persiguiendo leads que
+                                habían perdido interés. Cada lead costaba $45 y
+                                la mayoría se desperdiciaba.
+                            </p>
+                            <p class="text-white font-bold">
+                                Estaban quemando $9,000/mes en leads que nunca
+                                convertían.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="reveal glass-card p-10 rounded-[2rem]"
+                        style="transition-delay: 200ms;"
+                    >
+                        <h3
+                            class="text-xl font-display font-black text-white mb-6 uppercase tracking-tight"
+                        >
+                            Dolores Principales
+                        </h3>
+                        <ul class="space-y-4">
+                            {
+                                challenges.map((challenge) => (
+                                    <li class="flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-red-400 mt-1">
+                                            error
+                                        </span>
+                                        <span class="text-zinc-400">
+                                            {challenge}
+                                        </span>
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-16">
+                    <h2
+                        class="text-4xl md:text-5xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        Nuestra <span
+                            class="font-serif-elite italic text-white/50"
+                            >Solución</span
+                        >
+                    </h2>
+                    <p
+                        class="text-zinc-500 text-xl font-light max-w-2xl mx-auto"
+                    >
+                        Un sistema de 4 capas que filtró el ruido y entregó
+                        leads calientes al equipo de ventas.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {
+                        solutions.map((solution, i) => (
+                            <div
+                                class="reveal glass-card p-10 rounded-[2rem] group hover:bg-white/10 transition-all duration-500"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <div class="w-16 h-16 rounded-2xl ultra-thin-border flex items-center justify-center mb-8 bg-white/5 group-hover:scale-110 transition-transform">
+                                    <span class="material-symbols-outlined text-white/40 text-2xl group-hover:text-white transition-colors">
+                                        {solution.icon}
+                                    </span>
+                                </div>
+                                <h3 class="text-xl font-display font-black text-white mb-4 uppercase tracking-tight group-hover:text-accent transition-colors">
+                                    {solution.title}
+                                </h3>
+                                <p class="text-zinc-500 text-lg leading-relaxed">
+                                    {solution.description}
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- IMAGES GALLERY -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div class="reveal text-center mb-12">
+                    <h2
+                        class="text-3xl md:text-4xl font-display font-black text-white uppercase tracking-tight mb-4"
+                    >
+                        Evidencia <span
+                            class="font-serif-elite italic text-white/50"
+                            >Visual</span
+                        >
+                    </h2>
+                    <p class="text-zinc-500 text-lg font-light">
+                        Capturas del sistema implementado
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                    {
+                        galleryImages.map((img, i) => (
+                            <div
+                                class="reveal aspect-video glass-card rounded-2xl flex flex-col items-center justify-center group cursor-pointer hover:bg-white/10 transition-all duration-500"
+                                style={`transition-delay: ${i * 100}ms;`}
+                            >
+                                <span class="material-symbols-outlined text-white/20 text-5xl group-hover:text-white/40 transition-colors mb-4">
+                                    image
+                                </span>
+                                <p class="text-zinc-500 text-sm font-bold">
+                                    {img.placeholder}
+                                </p>
+                                <p class="text-[10px] text-white/20 mt-1">
+                                    [Placeholder]
+                                </p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="py-20 bg-secondary border-t ultra-thin-border">
+            <div class="max-w-[1400px] mx-auto px-8">
+                <div
+                    class="reveal max-w-4xl mx-auto glass-card p-12 md:p-16 rounded-[3rem] text-center"
+                >
+                    <h2
+                        class="text-4xl md:text-5xl font-display font-black text-white mb-8 tracking-tight"
+                    >
+                        Resultado <span
+                            class="font-serif-elite italic text-green-400"
+                            >Final</span
+                        >
+                    </h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                        <div>
+                            <div
+                                class="text-5xl font-display font-black text-white mb-2"
+                            >
+                                60%
+                            </div>
+                            <div class="text-zinc-500">
+                                Tasa de contacto (antes: 15%)
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-5xl font-display font-black text-white mb-2"
+                            >
+                                $27
+                            </div>
+                            <div class="text-zinc-500">
+                                Nuevo CPL (antes: $45)
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-5xl font-display font-black text-white mb-2"
+                            >
+                                3x
+                            </div>
+                            <div class="text-zinc-500">ROI sobre inversión</div>
+                        </div>
+                    </div>
+
+                    <p
+                        class="text-2xl text-zinc-500 font-light max-w-2xl mx-auto mb-12 italic"
+                    >
+                        "Después de trabajar con In Agencia, nuestros agentes
+                        solo hablan con personas que realmente quieren un
+                        seguro. El tiempo perdido bajó un 70%."
+                    </p>
+
+                    <a
+                        href="/contacto"
+                        class="cta-elite-glow inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] px-12 py-6 rounded-full"
+                    >
+                        ¿Quieres resultados similares?
+                        <span class="material-symbols-outlined text-lg"
+                            >arrow_outward</span
+                        >
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <CtaSection />
+    </main>
+    <Footer />
+</Layout>

@@ -1,0 +1,82 @@
+---
+const team = [
+  {
+    name: "Fundador & Estratega",
+    role: "CEO",
+    description:
+      "Obsesionado con el ROI. Cada decisión pasa por el filtro de '¿esto genera dinero?'",
+    initial: "F",
+  },
+  {
+    name: "Director de Performance",
+    role: "Head of Ads",
+    description:
+      "Experto en Meta y Google Ads. Optimiza campañas cada 48 horas.",
+    initial: "D",
+  },
+  {
+    name: "Especialista en Automatización",
+    role: "Automation Lead",
+    description:
+      "Construye máquinas de seguimiento de leads que trabajan 24/7.",
+    initial: "E",
+  },
+  {
+    name: "Director Creativo",
+    role: "Creative Director",
+    description:
+      "Creativos que venden, no que ganan premios. Scroll-stoppers garantizados.",
+    initial: "C",
+  },
+];
+---
+
+<section class="py-24 bg-secondary">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+      <div
+        class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+        El Equipo
+      </div>
+      <h2
+        class="text-5xl md:text-6xl font-display font-black text-white mb-6 tracking-tight"
+      >
+        Las personas detrás de los <span
+          class="font-serif-elite italic text-white/50">resultados</span
+        >
+      </h2>
+      <p class="text-xl text-zinc-500 font-light">
+        Un equipo pequeño pero enfocado. Cada miembro está obsesionado con una
+        sola cosa: hacer que tu inversión en marketing sea rentable.
+      </p>
+    </div>
+
+    <!-- Team Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {
+        team.map((member, index) => (
+          <div
+            class="reveal text-center group"
+            style={`transition-delay: ${index * 100}ms`}
+          >
+            <div class="w-32 h-32 mx-auto mb-6 rounded-[2rem] glass-card flex items-center justify-center text-5xl font-black text-white/20 group-hover:text-white/40 transition-colors">
+              {member.initial}
+            </div>
+            <h3 class="text-xl font-display font-black text-white mb-1 group-hover:text-accent transition-colors">
+              {member.name}
+            </h3>
+            <p class="text-white/40 font-bold text-[10px] uppercase tracking-[0.2em] mb-4">
+              {member.role}
+            </p>
+            <p class="text-zinc-500 text-sm leading-relaxed">
+              {member.description}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

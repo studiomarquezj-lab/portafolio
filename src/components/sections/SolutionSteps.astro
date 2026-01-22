@@ -1,0 +1,77 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "CAPTURA ESTRATÉGICA",
+    description: "Inyectamos tráfico de alta intención. No buscamos clicks, buscamos futuros clientes que ya quieren tu solución.",
+    gridClass: "md:col-span-4"
+  },
+  {
+    number: "02",
+    title: "CONVERSIÓN DE ÉLITE",
+    description: "Arquitectura de ventas que elimina fricciones y maximiza el ticket promedio.",
+    gridClass: "md:col-span-2"
+  },
+  {
+    number: "03",
+    title: "MÁQUINA AI 24/7",
+    description: "Automatización total del seguimiento y la nutrición de leads. Tu equipo solo cierra.",
+    gridClass: "md:col-span-2"
+  },
+  {
+    number: "04",
+    title: "ESCALADO AGRESIVO",
+    description: "Optimización basada en data real. Escalamos lo que genera revenue, eliminamos lo que no.",
+    gridClass: "md:col-span-4"
+  }
+];
+---
+
+<section class="py-32 bg-secondary relative overflow-hidden" id="sistema">
+  <!-- Decorative line -->
+  <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+  
+  <div class="max-w-[1400px] mx-auto px-8">
+    <div class="reveal max-w-4xl mb-24">
+      <div class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        Nuestra Ingeniería
+      </div>
+      <h2 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter uppercase mb-6">
+        Sistema de <span class="font-serif-elite italic text-accent lowercase">Crecimiento Infinito</span>
+      </h2>
+      <p class="text-xl md:text-2xl text-zinc-500 font-light max-w-2xl">
+        No hay magia. Hay una maquinaria lógica diseñada para convertir capital en rentabilidad operativa.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-6 gap-8">
+      {steps.map((step, i) => (
+        <div class:list={[
+          "reveal group p-10 md:p-14 rounded-[2.5rem] glass-card transition-all duration-700 flex flex-col justify-between overflow-hidden relative",
+          step.gridClass
+        ]} style={`transition-delay: ${i * 100}ms;`}>
+          
+          <!-- Animated Background Element -->
+          <div class="absolute -top-10 -right-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl group-hover:bg-accent/20 transition-all duration-700"></div>
+          
+          <div class="relative z-10">
+            <div class="text-6xl md:text-7xl font-display font-black text-white/5 group-hover:text-accent/20 transition-colors mb-10 leading-none font-serif-elite italic">
+              {step.number}
+            </div>
+            <h3 class="text-2xl md:text-3xl font-display font-black text-white mb-8 group-hover:text-accent transition-colors uppercase tracking-tight">
+              {step.title}
+            </h3>
+          </div>
+          
+          <p class="relative z-10 text-lg md:text-xl text-zinc-500 group-hover:text-white/70 transition-colors leading-relaxed">
+            {step.description}
+          </p>
+
+          <!-- Hover Decoration -->
+          <div class="absolute bottom-0 left-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-700"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

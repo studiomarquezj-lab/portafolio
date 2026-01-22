@@ -1,0 +1,48 @@
+---
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Sobre Nosotros",
+  subtitle = "No somos la agencia más grande. Pero probablemente somos la que más se obsesiona con tus resultados.",
+} = Astro.props;
+---
+
+<section
+  class="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden bg-secondary"
+>
+  <div
+    class="absolute top-[15%] left-[10%] w-[600px] h-[600px] glass-sphere rounded-full opacity-10 blur-lg"
+  >
+  </div>
+  <div
+    class="absolute bottom-[-10%] right-[5%] w-[800px] h-[800px] glass-sphere rounded-full opacity-5 blur-xl"
+  >
+  </div>
+
+  <div class="max-w-[1400px] mx-auto px-8 relative z-10">
+    <div class="max-w-4xl">
+      <!-- Badge -->
+      <div
+        class="reveal inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-full ultra-thin-border bg-white/5 text-white/60 text-[10px] font-bold uppercase tracking-[0.3em]"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-white animate-pulse"></span>
+        Quiénes Somos
+      </div>
+
+      <h1
+        class="reveal text-6xl md:text-8xl lg:text-9xl font-display font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase mercury-text"
+      >
+        {title}
+      </h1>
+      <p
+        class="reveal text-xl md:text-2xl text-zinc-500 mb-12 leading-relaxed max-w-3xl font-light"
+        style="transition-delay: 200ms;"
+      >
+        {subtitle}
+      </p>
+    </div>
+  </div>
+</section>

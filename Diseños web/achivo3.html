@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>In Agencia - Calificación de Clientes</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&amp;family=Outfit:wght@700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFFFFF",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0A0A0A",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .split-container {
+            min-height: calc(100vh - 80px);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans antialiased">
+    <nav
+        class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-white/10 bg-white/80 dark:bg-black/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img alt="In Agencia Logo" class="h-10 w-auto brightness-0 dark:brightness-100 transition-all"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGW2XNXNavI78xk7_zUBKLHM9JCcc8sC9p2cXgw3LfxHHjCJEwVy87SMFJQdJCDdZoNr_ofCz5oIYocyrAc0Zfh1nkbYDQAorQtcZ8NfyJXyxNWenOWczZXSYTzp99N7bC6hi0phIB_LYKB9J2z-KJVp7q4pETg27hOMh0rlHzOVPmDD6xNgBF53dm3sprkqApAHgN49i-KLOFKkeogQLbUT_KcOfSIn86Hmd0H3XYc-q0_FGr4Tk_dHTud_SoyZtJ_pLnQO4fSADA" />
+                <span class="font-display text-xl font-black uppercase tracking-tighter">In Agencia</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide uppercase">
+                <a class="hover:text-slate-500 transition-colors" href="#">Estrategia</a>
+                <a class="hover:text-slate-500 transition-colors" href="#">Resultados</a>
+                <a class="px-5 py-2.5 bg-slate-900 dark:bg-white text-white dark:text-black rounded-full hover:scale-105 transition-transform"
+                    href="#">Agendar Auditoría</a>
+            </div>
+            <button class="p-2 rounded-full border border-slate-200 dark:border-white/10"
+                onclick="document.documentElement.classList.toggle('dark')">
+                <span class="material-symbols-outlined block dark:hidden">dark_mode</span>
+                <span class="material-symbols-outlined hidden dark:block">light_mode</span>
+            </button>
+        </div>
+    </nav>
+    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
+        <span class="text-xs font-black tracking-[0.3em] uppercase opacity-60 mb-4 block">Filtro de Selección</span>
+        <h1 class="font-display text-5xl md:text-7xl font-black mb-6 leading-tight">No aceptamos a cualquiera.
+            <br /><span class="text-slate-500">Solo a los mejores.</span></h1>
+        <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 font-light max-w-2xl mx-auto">
+            Somos una boutique de crecimiento de alto ROI. Buscamos socios, no clientes. Identifica si encajas con
+            nuestra metodología antes de aplicar.
+        </p>
+    </header>
+    <main class="grid lg:grid-cols-2 w-full min-h-screen overflow-hidden">
+        <section class="bg-black text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center relative group">
+            <div class="absolute top-10 left-10 opacity-10 font-display text-9xl font-black select-none">YES</div>
+            <div class="relative z-10">
+                <div
+                    class="mb-12 inline-flex items-center gap-3 px-4 py-2 bg-white/10 rounded-full border border-white/20">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest">Apto para Escalar</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-6xl font-black mb-12 tracking-tight">Para quién <br /><span
+                        class="text-white/40">es In Agencia.</span></h2>
+                <ul class="space-y-8 max-w-md">
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-green-400 mt-1 shrink-0">check_circle</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Empresas con Tracción</p>
+                            <p class="text-white/60 font-light leading-relaxed">Ya facturas, tienes un producto validado
+                                y buscas gasolina para un fuego que ya arde.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-green-400 mt-1 shrink-0">trending_up</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Mentalidad de Crecimiento</p>
+                            <p class="text-white/60 font-light leading-relaxed">Entiendes que el marketing es una
+                                inversión, no un gasto. Buscas ROI, no likes.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span
+                            class="material-symbols-outlined text-green-400 mt-1 shrink-0">precision_manufacturing</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Operaciones Listas</p>
+                            <p class="text-white/60 font-light leading-relaxed">Tu equipo puede absorber un incremento
+                                masivo de demanda sin romper la experiencia de usuario.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-green-400 mt-1 shrink-0">verified</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Visión de Autoridad</p>
+                            <p class="text-white/60 font-light leading-relaxed">Deseas dominar tu nicho y convertirte en
+                                el referente indiscutible de tu industria.</p>
+                        </div>
+                    </li>
+                </ul>
+                <button
+                    class="mt-16 group flex items-center gap-4 text-lg font-black uppercase tracking-tighter border-b-2 border-white pb-2 hover:gap-6 transition-all">
+                    Califico para empezar <span class="material-symbols-outlined">arrow_forward</span>
+                </button>
+            </div>
+        </section>
+        <section
+            class="bg-slate-50 dark:bg-zinc-900 text-slate-900 dark:text-white p-8 md:p-16 lg:p-24 flex flex-col justify-center relative group">
+            <div
+                class="absolute top-10 right-10 opacity-5 dark:opacity-10 font-display text-9xl font-black select-none">
+                NO</div>
+            <div class="relative z-10">
+                <div
+                    class="mb-12 inline-flex items-center gap-3 px-4 py-2 bg-slate-200 dark:bg-white/5 rounded-full border border-slate-300 dark:border-white/10">
+                    <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                    <span class="text-xs font-bold uppercase tracking-widest opacity-60">No somos compatibles</span>
+                </div>
+                <h2 class="font-display text-4xl md:text-6xl font-black mb-12 tracking-tight">Para quién <span
+                        class="text-slate-400">no somos.</span></h2>
+                <ul class="space-y-8 max-w-md">
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-red-500 mt-1 shrink-0">cancel</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Buscadores de "Trucos Mágicos"</p>
+                            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">Si buscas
+                                resultados de la noche a la mañana sin una estructura sólida detrás.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-red-500 mt-1 shrink-0">money_off</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Presupuestos de Supervivencia</p>
+                            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">Si estás gastando
+                                tus últimos ahorros para "probar suerte" en el mundo digital.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-red-500 mt-1 shrink-0">psychology_alt</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Micro-management</p>
+                            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">Si no confías en
+                                los datos y prefieres basar tus decisiones en "corazonadas" personales.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4">
+                        <span class="material-symbols-outlined text-red-500 mt-1 shrink-0">hourglass_empty</span>
+                        <div>
+                            <p class="font-bold text-xl mb-1">Sin Oferta Clara</p>
+                            <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">Si aún no sabes qué
+                                vendes ni a quién, el marketing no resolverá tu problema de negocio.</p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="mt-16 text-slate-400 dark:text-white/40 italic font-light">
+                    * Si te identificas con alguno de estos puntos, te deseamos lo mejor, pero no somos la agencia que
+                    buscas.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-white dark:bg-black py-20 px-6 border-t border-slate-100 dark:border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+            <div class="max-w-xl text-center md:text-left">
+                <h3 class="font-display text-3xl font-black mb-4">¿Preparado para el siguiente nivel?</h3>
+                <p class="text-slate-500 dark:text-slate-400">Solo aceptamos 2 nuevos clientes por mes para garantizar
+                    la excelencia operativa y resultados exponenciales.</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a class="px-8 py-4 bg-slate-900 dark:bg-white text-white dark:text-black font-black uppercase tracking-wider rounded-full hover:shadow-2xl hover:-translate-y-1 transition-all text-center"
+                    href="#">
+                    Aplicar ahora
+                </a>
+                <a class="px-8 py-4 border-2 border-slate-200 dark:border-white/10 font-black uppercase tracking-wider rounded-full hover:bg-slate-50 dark:hover:bg-white/5 transition-all text-center"
+                    href="#">
+                    Ver Casos de Éxito
+                </a>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-100 dark:border-white/5 flex flex-col md:flex-row justify-between items-center text-xs uppercase tracking-[0.2em] font-bold opacity-40 gap-4">
+            <div class="flex items-center gap-4">
+                <img alt="In Agencia Small Logo" class="h-6 w-auto grayscale"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoRBYv6bJp83lCQSCwJE4Mg6triHaVq27BwZVv_F8DKeaLw_XcQh60fLhuPuMH3dKoRNn27nUosaOy47vmufaV4N2avdZg5odWrBkcKOZ9a71EUJEHOIoOTkg-86GHb2G5kFqk84SpoUnRSSWQNmKIavjdy0KAqaNJem5J-vrJ2ueb_jnYAihf5y8YBWrcVJ_HTsX3xcbCmZ9NO5BlwyP70rpJhLAR-PnGn2ltlC4c7-IRO9JgwhS_nkSJvcKzt7P-8FG6aEZ26dOG" />
+                <span>© 2024 In Agencia. All Rights Reserved.</span>
+            </div>
+            <div class="flex gap-8">
+                <a class="hover:opacity-100 transition-opacity" href="#">Privacy</a>
+                <a class="hover:opacity-100 transition-opacity" href="#">Terms</a>
+                <a class="hover:opacity-100 transition-opacity" href="#">Linkedin</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  question: string;
+}
+
+const { question } = Astro.props;
+---
+
+<div class="glass-card rounded-2xl overflow-hidden reveal">
+  <details class="group">
+    <summary
+      class="flex items-center justify-between p-6 cursor-pointer list-none font-bold text-lg text-white pr-12 relative hover:bg-white/5 transition-colors"
+    >
+      {question}
+      <span
+        class="absolute right-6 top-1/2 -translate-y-1/2 transform transition-transform group-open:rotate-180"
+      >
+        <span class="material-symbols-outlined text-white/40">expand_more</span>
+      </span>
+    </summary>
+    <div
+      class="px-6 pb-6 text-zinc-400 leading-relaxed border-t ultra-thin-border pt-4"
+    >
+      <slot />
+    </div>
+  </details>
+</div>
+
+<style>
+  summary::-webkit-details-marker {
+    display: none;
+  }
+</style>

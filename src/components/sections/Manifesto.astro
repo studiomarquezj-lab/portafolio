@@ -1,0 +1,57 @@
+---
+const principles = [
+  {
+    id: "01",
+    text: "El marketing existe para vender, no para ganar premios.",
+  },
+  {
+    id: "02",
+    text: "Un lead que no compra es solo un dato en una hoja de cálculo.",
+  },
+  {
+    id: "03",
+    text: "Los números no mienten. Las agencias sí.",
+  },
+  {
+    id: "04",
+    text: "Si no funciona, lo matamos y probamos otra cosa. Sin ego.",
+  },
+  {
+    id: "05",
+    text: "Preferimos un cliente feliz que diez clientes atrapados.",
+  },
+];
+---
+
+<section class="py-24 bg-secondary border-t ultra-thin-border">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <div class="max-w-4xl mx-auto mb-16 reveal text-center">
+      <h2
+        class="text-4xl md:text-5xl font-display font-black text-white mb-6 uppercase tracking-tight"
+      >
+        Manifiesto <span class="font-serif-elite italic text-white/50 lowercase"
+          >IN</span
+        >
+      </h2>
+      <div class="h-[0.5px] w-24 bg-white/20 mx-auto"></div>
+    </div>
+
+    <div class="max-w-3xl mx-auto space-y-4">
+      {
+        principles.map((p, index) => (
+          <div
+            class="glass-card p-6 md:p-8 rounded-2xl flex gap-6 items-center reveal group transition-all duration-500 hover:bg-white/10"
+            style={`transition-delay: ${index * 100}ms`}
+          >
+            <span class="text-4xl font-display font-black text-white/10 group-hover:text-white/20 transition-colors">
+              {p.id}
+            </span>
+            <p class="text-xl md:text-2xl font-bold text-white group-hover:text-accent transition-colors">
+              {p.text}
+            </p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

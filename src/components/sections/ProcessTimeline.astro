@@ -1,0 +1,104 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "AUDITORÍA TÉCNICA",
+    subtitle: "30 min de claridad absoluta",
+    description:
+      "Analizamos tu funnel actual, tus números y tus objetivos. Sin pitch de ventas. Solo ingeniería comercial pura.",
+    icon: "📞",
+  },
+  {
+    number: "02",
+    title: "PROPUESTA DE ESCALADO",
+    subtitle: "El mapa hacia el ROI",
+    description:
+      "Si detectamos potencial, diseñamos un sistema a medida con proyecciones claras de inversión y retorno.",
+    icon: "📋",
+  },
+  {
+    number: "03",
+    title: "DESPLIEGUE INICIAL",
+    subtitle: "Velocidad de ejecución",
+    description:
+      "Configuramos rastreo, creativos y automatización. En 72h estamos listos para encender la maquinaria.",
+    icon: "🚀",
+  },
+  {
+    number: "04",
+    title: "OPTIMIZACIÓN QUIRÚRGICA",
+    subtitle: "Basada en data real",
+    description:
+      "No esperamos a fin de mes. Ajustamos el sistema cada 48h para maximizar la eficiencia del capital.",
+    icon: "📈",
+  },
+];
+---
+
+<section class="py-32 bg-secondary relative overflow-hidden" id="proceso">
+  <div class="max-w-[1400px] mx-auto px-8">
+    <div class="reveal max-w-4xl mb-24 text-center mx-auto">
+      <div
+        class="inline-flex items-center gap-3 px-4 py-2 ultra-thin-border bg-white/5 text-white/40 text-[10px] font-bold uppercase tracking-[0.3em] rounded-full mb-8"
+      >
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span>
+        La Ruta Crítica
+      </div>
+      <h2
+        class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-white leading-[0.9] tracking-tighter uppercase mb-6"
+      >
+        Proceso de <span class="font-serif-elite italic text-accent lowercase"
+          >Inyección de Capital</span
+        >
+      </h2>
+      <p class="text-xl md:text-2xl text-zinc-500 font-light max-w-2xl mx-auto">
+        Un sistema lineal diseñado para eliminar la incertidumbre y forzar el
+        crecimiento.
+      </p>
+    </div>
+
+    <div class="max-w-5xl mx-auto space-y-8">
+      {
+        steps.map((step, i) => (
+          <div
+            class="reveal group flex flex-col md:flex-row gap-10 items-center p-10 md:p-14 rounded-[2.5rem] glass-card transition-all duration-700"
+            style={`transition-delay: ${i * 100}ms;`}
+          >
+            <div class="w-20 h-20 rounded-2xl ultra-thin-border flex items-center justify-center text-4xl shrink-0 group-hover:scale-110 transition-transform duration-500 bg-accent/10">
+              {step.icon}
+            </div>
+
+            <div class="flex-grow text-center md:text-left">
+              <div class="text-[10px] font-bold text-accent uppercase tracking-[0.3em] mb-2">
+                {step.number} — {step.subtitle}
+              </div>
+              <h3 class="text-2xl md:text-3xl font-display font-black text-white mb-4 uppercase tracking-tight group-hover:text-accent transition-colors">
+                {step.title}
+              </h3>
+              <p class="text-zinc-500 text-lg leading-relaxed max-w-3xl group-hover:text-zinc-400 transition-colors">
+                {step.description}
+              </p>
+            </div>
+
+            <div class="hidden lg:block">
+              <span class="material-symbols-outlined text-white/5 group-hover:text-accent text-3xl transition-colors">
+                arrow_forward
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+
+    <!-- CTA centered -->
+    <div class="reveal mt-20 text-center" style="transition-delay: 400ms;">
+      <a
+        href="/contacto"
+        class="cta-elite-glow inline-flex items-center gap-4 text-xs font-bold uppercase tracking-[0.2em] px-12 py-6 rounded-full"
+      >
+        Agendar Auditoría Gratuita
+        <span class="material-symbols-outlined text-lg">arrow_outward</span>
+      </a>
+    </div>
+  </div>
+</section>
