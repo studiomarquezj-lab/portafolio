@@ -1,0 +1,37 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA DE CONTACTO
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  badge: "Primer Paso"
+  title: "Aplica para tu diagnóstico gratuito"
+  subtitle: "No somos para todos. Somos para negocios que ya venden y quieren vender más — sistemáticamente."
+  highlight: "Completa este formulario en 2 minutos y revisaremos tu caso personalmente."
+
+calendly:
+  # URL del widget de Calendly (puedes cambiarla a tu propio link)
+  url: "https://calendly.com/studio-marquez-j/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=020203&text_color=ffffff&primary_color=ffffff"
+
+faq:
+  title: "Preguntas Frecuentes"
+  subtitle: "Todo lo que necesitas saber antes de empezar"
+  items:
+    - question: "¿Cuánto cuesta trabajar con In Agencia?"
+      answer:
+        - "Depende del alcance. Nuestros proyectos van desde servicios de gestión de ads hasta sistemas completos de automatización y funnels."
+        - "No somos la opción más barata, pero somos la que más retorno genera por cada dólar que inviertes."
+    
+    - question: "¿Garantizan resultados?"
+      answer:
+        - "Garantizamos tres cosas: Estrategia basada en datos, ejecución obsesiva y transparencia total."
+        - "Si en 30 días no hay tracción (leads reales llegando), revisamos todo y ajustamos sin costo extra."
+    
+    - question: "¿Cuánto tiempo toma ver resultados?"
+      answer:
+        - "Primeros indicadores en 1-2 semanas. Optimización inicial en 30 días. Sistema afinado y escalable en 60-90 días."
+        - "Si alguien te promete milagros en 48 horas, te está mintiendo."
+    
+    - question: "¿En qué países trabajan?"
+      answer:
+        - "Trabajamos con clientes en Estados Unidos, México, Colombia, Perú, Argentina y España."
+        - "Operamos 100% remoto con reuniones por videollamada."

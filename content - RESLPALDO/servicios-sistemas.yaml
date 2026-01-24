@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA DE SERVICIOS - SISTEMAS Y FUNNELS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  title: "Sistemas y Funnels"
+  subtitle: "Arquitectura de ventas que convierte visitantes en clientes. Diseñamos sistemas completos que trabajan por ti."
+  cta: "Agendar diagnóstico especializado"
+  bg_image: "/images/hero_abstract_growth.png"
+
+features:
+  title: "Lo que construimos"
+  items:
+    - title: "Landing pages de alta conversión"
+      description: "Páginas diseñadas con un solo objetivo: que el visitante tome acción. Sin distracciones, sin fricción."
+    - title: "Embudos de ventas completos"
+      description: "Desde el primer contacto hasta el cierre. Cada paso optimizado para mover al prospecto hacia la compra."
+    - title: "Páginas de checkout optimizadas"
+      description: "Reducimos el abandono de carrito con diseño estratégico y elementos de confianza en los puntos críticos."
+    - title: "Secuencias de email post-compra"
+      description: "Maximiza el LTV de cada cliente con secuencias que generan recompras y referidos automáticamente."
+    - title: "Sistemas de upsell y cross-sell"
+      description: "Aumenta tu ticket promedio con ofertas estratégicas presentadas en el momento exacto."
+    - title: "Integración total con tu stack"
+      description: "Tu CRM, tu pasarela de pagos, tus automatizaciones. Todo conectado y funcionando como un reloj."
+
+stats:
+  - value: "+35%"
+    label: "Conversión Promedio"
+  - value: "-60%"
+    label: "Abandono de Carrito"
+  - value: "+45%"
+    label: "Ticket Promedio"
+  - value: "72h"
+    label: "Tiempo de Deploy"
+
+testimonial:
+  quote: "El funnel que nos construyeron convierte 3x mejor que nuestra landing anterior. Y eso que pensábamos que la anterior estaba bien."
+  author: "Carlos R."
+  role: "Fundador"
+  company: "SaaS B2B"

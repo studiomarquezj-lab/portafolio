@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA DE CASOS DE ÉXITO
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  badge: "Resultados Auditados"
+  title: "Resultados. No promesas."
+  subtitle: "Aquí no hablamos de alcances o impresiones. Hablamos de ROI, ROAS y facturación neta. La matemática no miente."
+
+summary_stats:
+  - value: "$10M+"
+    label: "Generados para clientes"
+  - value: "50+"
+    label: "Casos de éxito"
+  - value: "8-12x"
+    label: "ROI promedio"
+  - value: "150x"
+    label: "Mejor caso documentado"
+
+industries:
+  title: "Industrias donde hemos generado resultados"
+  list:
+    - "B2B SaaS"
+    - "Seguros"
+    - "Real Estate"
+    - "E-commerce"
+    - "Consultoría"
+    - "Educación Online"
+    - "Servicios Profesionales"
+    - "Manufactura"
+
+featured_cases:
+  title: "Casos Detallados"
+  subtitle: "Explora la estrategia completa detrás de cada resultado."
+  cases:
+    - tag: "B2B • SERVICIOS"
+      title: "E-commerce B2B: $3M en 18 meses"
+      href: "/casos/ecommerce-b2b"
+    - tag: "LEAD GEN • USA"
+      title: "Seguros USA: Leads que contestan"
+      href: "/casos/seguros-usa"
+
+no_logos_section:
+  title: "¿Por qué no mostramos logos?"
+  paragraphs:
+    - "Muchas agencias muestran logos de multinacionales para parecer importantes. Nosotros preferimos proteger la privacidad de nuestros clientes y mostrar la matemática detrás de cada éxito."
+    - "Cada uno de estos casos tiene un dueño de negocio que, al igual que tú, buscaba rentabilidad. Si quieres conocer los detalles específicos de un sector, podemos discutirlos bajo confidencialidad en nuestra llamada."

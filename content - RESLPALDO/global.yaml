@@ -1,0 +1,80 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO GLOBAL - HEADER, FOOTER, NAVEGACIÓN
+# ═══════════════════════════════════════════════════════════════════════════════
+# Este archivo contiene textos que aparecen en TODAS las páginas.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+# Información de la empresa
+company:
+  name: "In Agencia"
+  name_display: "IN AGENCIA"
+  tagline: "Diseñamos el futuro de las ventas digitales."
+  tagline_accent: "Resultados, no promesas."
+  copyright: "© 2026 In Agencia. El éxito no es un accidente."
+
+# Navegación principal
+navigation:
+  main:
+    - label: "Servicios"
+      href: "#servicios"
+      children:
+        - label: "Ads de Performance"
+          href: "/servicios/ads"
+        - label: "Automatización"
+          href: "/servicios/automatizacion"
+        - label: "Sistemas y Funnels"
+          href: "/servicios/sistemas"
+    - label: "Casos"
+      href: "/casos"
+    - label: "Nosotros"
+      href: "/nosotros"
+    - label: "Contacto"
+      href: "/contacto"
+  
+  cta_button:
+    text: "Agendar Llamada"
+    href: "/contacto"
+
+# Footer
+footer:
+  servicios:
+    title: "Servicios"
+    links:
+      - label: "Ads de Performance"
+        href: "/servicios/ads"
+      - label: "Automatización"
+        href: "/servicios/automatizacion"
+      - label: "Sistemas y Funnels"
+        href: "/servicios/sistemas"
+  
+  agencia:
+    title: "Agencia"
+    links:
+      - label: "Sobre In"
+        href: "/nosotros"
+      - label: "Casos Reales"
+        href: "/casos"
+      - label: "Diagnóstico"
+        href: "/contacto"
+  
+  legal:
+    - label: "Privacidad"
+      href: "#"
+    - label: "Términos"
+      href: "#"
+  
+  social:
+    instagram: "https://instagram.com"
+    linkedin: "https://linkedin.com"
+
+# Redes sociales (URLs)
+social_media:
+  instagram: "https://instagram.com/in.agencia"
+  linkedin: "https://linkedin.com/company/in-agencia"
+  # Añade más si necesitas
+
+# SEO por defecto
+seo:
+  site_name: "In Agencia"
+  default_title: "In Agencia | Marketing de Performance"
+  default_description: "Especialistas en Ads de Performance, Automatización y Sistemas de Venta para escalar negocios en USA y LATAM."

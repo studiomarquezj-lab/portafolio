@@ -1,0 +1,190 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONTENIDO DE LA PÁGINA DE INICIO (index.astro)
+# ═══════════════════════════════════════════════════════════════════════════════
+# Este archivo contiene todo el texto editable de la página principal.
+# Modifica los valores y el sitio se actualizará automáticamente.
+# ═══════════════════════════════════════════════════════════════════════════════
+
+hero:
+  badge: "Marketing Boutique de Élite"
+  title: "Generamos leads que se convierten en ventas"
+  subtitle: "No likes. No 'alcance'. Dinero real. Sistema probado con +50 clientes en USA y LATAM."
+  cta_primary: "Ver si calificas"
+  cta_secondary: "Metodología"
+  stats:
+    - value: "8-12x"
+      label: "ROI Promedio"
+    - value: "150X"
+      label: "Mejor Caso"
+
+marquee:
+  title: "Ecosistema Tecnológico de Escalamiento"
+  platforms:
+    - name: "Meta Ads"
+    - name: "Google Ads"
+    - name: "TikTok Ads"
+    - name: "LinkedIn Ads"
+    - name: "YouTube"
+    - name: "WhatsApp"
+    - name: "Zapier"
+    - name: "Make"
+
+problem_section:
+  badge: "La Cruda Realidad"
+  title: "El 90% de las agencias están quemando tu dinero"
+  problems:
+    - id: "01"
+      text: "Reportes llenos de métricas de vanidad que no pagan facturas."
+    - id: "02"
+      text: "Estrategias genéricas de 'copia y pega' sin alma competitiva."
+    - id: "03"
+      text: "Falta de claridad absoluta sobre tu Retorno de Inversión."
+    - id: "04"
+      text: "Promesas de 'branding' que solo queman tu presupuesto."
+  statement:
+    quote: "En In Agencia, operamos con transparencia quirúrgica."
+    description: "Eliminamos el 'ruido' del marketing tradicional para enfocarnos únicamente en la variable que importa:"
+    kpi: "REVENUE NETO"
+    tagline: "Sin retorno no hay futuro. Punto."
+
+solution_steps:
+  badge: "Nuestra Ingeniería"
+  title: "Sistema de Crecimiento Infinito"
+  subtitle: "No hay magia. Hay una maquinaria lógica diseñada para convertir capital en rentabilidad operativa."
+  steps:
+    - number: "01"
+      title: "CAPTURA ESTRATÉGICA"
+      description: "Inyectamos tráfico de alta intención. No buscamos clicks, buscamos futuros clientes que ya quieren tu solución."
+    - number: "02"
+      title: "CONVERSIÓN DE ÉLITE"
+      description: "Arquitectura de ventas que elimina fricciones y maximiza el ticket promedio."
+    - number: "03"
+      title: "MÁQUINA AI 24/7"
+      description: "Automatización total del seguimiento y la nutrición de leads. Tu equipo solo cierra."
+    - number: "04"
+      title: "ESCALADO AGRESIVO"
+      description: "Optimización basada en data real. Escalamos lo que genera revenue, eliminamos lo que no."
+
+for_who:
+  header:
+    badge: "Filtro de Selección"
+    title: "No aceptamos a cualquiera. Solo a los mejores."
+    subtitle: "Somos una boutique de crecimiento de alto ROI. Buscamos socios, no clientes. Identifica si encajas con nuestra metodología antes de aplicar."
+  
+  yes_column:
+    badge: "Apto para Escalar"
+    title: "Para quién es In Agencia."
+    items:
+      - title: "Empresas con Tracción"
+        description: "Ya facturas, tienes un producto validado y buscas gasolina para un fuego que ya arde."
+      - title: "Mentalidad de Crecimiento"
+        description: "Entiendes que el marketing es una inversión, no un gasto. Buscas ROI, no likes."
+      - title: "Operaciones Listas"
+        description: "Tu equipo puede absorber un incremento masivo de demanda sin romper la experiencia de usuario."
+      - title: "Visión de Autoridad"
+        description: "Deseas dominar tu nicho y convertirte en el referente indiscutible de tu industria."
+    cta: "Califico para empezar"
+  
+  no_column:
+    badge: "No somos compatibles"
+    title: "Para quién no somos."
+    items:
+      - title: "Buscadores de 'Trucos Mágicos'"
+        description: "Si buscas resultados de la noche a la mañana sin una estructura sólida detrás."
+      - title: "Presupuestos de Supervivencia"
+        description: "Si estás gastando tus últimos ahorros para 'probar suerte' en el mundo digital."
+      - title: "Micro-management"
+        description: "Si no confías en los datos y prefieres basar tus decisiones en 'corazonadas' personales."
+      - title: "Sin Oferta Clara"
+        description: "Si aún no sabes qué vendes ni a quién, el marketing no resolverá tu problema de negocio."
+    disclaimer: "* Si te identificas con alguno de estos puntos, te deseamos lo mejor, pero no somos la agencia que buscas."
+
+case_studies:
+  badge: "Resultados Auditados"
+  title: "Matemática Incontestable"
+  subtitle: "No coleccionamos logos. Coleccionamos multiplicadores de capital."
+  cases:
+    - tag: "B2B • SERVICIOS PROFESIONALES"
+      headline: "De $20K a $3,000,000 en 18 meses"
+      description: "Empresa B2B con tickets altos que necesitaba prospectos calificados, no curiosos. Implementamos un sistema de filtrado quirúrgico."
+      revenue: "$3M"
+      roi: "150x"
+    - tag: "LEAD GEN • SEGUROS USA"
+      headline: "Leads que sí contestan el teléfono"
+      description: "Redujimos el costo por lead en un 40% mientras aumentamos la tasa de contacto real. Eficiencia pura en seguros USA."
+      revenue: "+60%"
+      roi: "3x"
+    - tag: "E-COMMERCE • ESCALAMIENTO"
+      headline: "ROAS 5.2x en solo 90 días"
+      description: "Recuperamos el 23% de carritos abandonados solo con automatización AI. Lo que era estancamiento se convirtió en flujo."
+      revenue: "+40%"
+      roi: "5.2x"
+  cta: "¿Podemos escalar tu negocio? Hablémoslo."
+
+why_us:
+  badge: "Nuestros Pilares"
+  title: "¿Por qué confiar en Nosotros?"
+  subtitle: "La diferencia entre una agencia tradicional y una consultora de ingeniería comercial es el compromiso con los números."
+  features:
+    - icon: "🎯"
+      title: "ENFOQUE EN REVENUE"
+      description: "No nos interesan las métricas de vanidad. Todo lo que hacemos tiene un solo objetivo: aumentar tu facturación neta."
+    - icon: "⚡"
+      title: "VELOCIDAD DE ÉLITE"
+      description: "Implementamos sistemas de escalado en tiempo récord. Tu competencia no sabrá qué los golpeó."
+    - icon: "📊"
+      title: "DATA QUIRÚRGICA"
+      description: "Decisiones basadas en números fríos, no en intuiciones. Si los datos no lo dicen, no lo hacemos."
+    - icon: "🤝"
+      title: "SOCIOS DE CAPITAL"
+      description: "No somos un proveedor externo. Somos tu equipo de ingeniería de ventas. Tu éxito es nuestro ROI."
+    - icon: "🚀"
+      title: "ESCALADO INFINITO"
+      description: "Construimos sistemas que no se rompen bajo presión. Si tu negocio puede crecer, nuestro sistema lo llevará al límite."
+    - icon: "🔒"
+      title: "TRANSPARENCIA TOTAL"
+      description: "Tendrás acceso a cada centavo invertido y cada dólar generado. Sin secretos, sin excusas."
+
+process_timeline:
+  badge: "La Ruta Crítica"
+  title: "Proceso de Inyección de Capital"
+  subtitle: "Un sistema lineal diseñado para eliminar la incertidumbre y forzar el crecimiento."
+  steps:
+    - number: "01"
+      title: "AUDITORÍA TÉCNICA"
+      subtitle: "30 min de claridad absoluta"
+      description: "Analizamos tu funnel actual, tus números y tus objetivos. Sin pitch de ventas. Solo ingeniería comercial pura."
+    - number: "02"
+      title: "PROPUESTA DE ESCALADO"
+      subtitle: "El mapa hacia el ROI"
+      description: "Si detectamos potencial, diseñamos un sistema a medida con proyecciones claras de inversión y retorno."
+    - number: "03"
+      title: "DESPLIEGUE INICIAL"
+      subtitle: "Velocidad de ejecución"
+      description: "Configuramos rastreo, creativos y automatización. En 72h estamos listos para encender la maquinaria."
+    - number: "04"
+      title: "OPTIMIZACIÓN QUIRÚRGICA"
+      subtitle: "Basada en data real"
+      description: "No esperamos a fin de mes. Ajustamos el sistema cada 48h para maximizar la eficiencia del capital."
+  cta: "Agendar Auditoría Gratuita"
+
+guarantees:
+  badge: "Nuestros Compromisos"
+  title: "La Garantía 'In-In'"
+  subtitle: "No somos una agencia. Somos tus socios financieros. Si tú no ganas, nosotros no existimos."
+  items:
+    - title: "TRANSPARENCIA QUIRÚRGICA"
+      description: "Acceso total a tus cuentas publicitarias y datos en tiempo real. Si te vas, te llevas tu histórico. Sin letra pequeña."
+    - title: "AGILIDAD OPERATIVA"
+      description: "Ajustamos tu sistema cada 48 horas. Sin esperar reportes mensuales. Si algo no vuela, lo matamos al instante."
+    - title: "HONESTIDAD BRUTAL"
+      description: "Si tu producto tiene un techo comercial o el mercado no responde, te lo decimos. Preferimos la verdad al fee."
+    - title: "FOCO EN NET REVENUE"
+      description: "No celebramos clicks. Celebramos dinero en tu banco. Es la única métrica de éxito que aceptamos."
+
+cta_section:
+  badge: "Escalamiento Limitado"
+  title: "¿Listo para el siguiente nivel?"
+  subtitle: "Solo aceptamos 2 nuevos socios financieros cada trimestre. Veamos si el tuyo es uno de ellos."
+  cta: "Iniciar Diagnóstico"
+  disclaimer: "No es una llamada de ventas. Es una auditoría de ingeniería comercial."
