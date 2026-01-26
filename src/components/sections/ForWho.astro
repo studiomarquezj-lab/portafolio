@@ -2,54 +2,54 @@
 const isFor = [
     {
         icon: "check_circle",
-        title: "Empresas con Tracción",
+        title: "Facturación Validada",
         description:
-            "Ya facturas, tienes un producto validado y buscas gasolina para un fuego que ya arde.",
+            "Ya facturas $5k-$100k/mes. Tienes producto probado y buscas gasolina para el fuego.",
     },
     {
         icon: "trending_up",
-        title: "Mentalidad de Crecimiento",
+        title: "Valoras la Data",
         description:
-            "Entiendes que el marketing es una inversión, no un gasto. Buscas ROI, no likes.",
+            "Prefieres saber tu ROAS real y Costo por Venta antes que tener 'likes' o métricas de vanidad.",
     },
     {
         icon: "precision_manufacturing",
-        title: "Operaciones Listas",
+        title: "Tienes Equipo de Ventas",
         description:
-            "Tu equipo puede absorber un incremento masivo de demanda sin romper la experiencia de usuario.",
+            "O estás listo para armarlo. Necesitas volumen y calidad para alimentar a tus cerradores.",
     },
     {
         icon: "verified",
-        title: "Visión de Autoridad",
+        title: "B2B o High Ticket",
         description:
-            "Deseas dominar tu nicho y convertirte en el referente indiscutible de tu industria.",
+            "Vendes servicios profesionales ($1k+) o E-commerce B2B. Necesitas leads calificados, no curiosos.",
     },
 ];
 
 const isNotFor = [
     {
         icon: "cancel",
-        title: 'Buscadores de "Trucos Mágicos"',
+        title: "Presupuestos Irrisorios",
         description:
-            "Si buscas resultados de la noche a la mañana sin una estructura sólida detrás.",
+            "Ofreces $200-$500/mes para 'probar'. Ve a Fiverr. Nosotros cobramos por resultados serios.",
     },
     {
         icon: "money_off",
-        title: "Presupuestos de Supervivencia",
+        title: "Solo buscas Branding",
         description:
-            'Si estás gastando tus últimos ahorros para "probar suerte" en el mundo digital.',
+            "Quieres presencia en redes sin foco en ventas directas. Nosotros somos performance, no PR.",
     },
     {
         icon: "psychology_alt",
-        title: "Micro-management",
+        title: "Micro-Management",
         description:
-            'Si no confías en los datos y prefieres basar tus decisiones en "corazonadas" personales.',
+            "Necesitas aprobar cada palabra del copy. Nosotros operamos con autonomía basada en data.",
     },
     {
         icon: "hourglass_empty",
-        title: "Sin Oferta Clara",
+        title: "Sin Data Real",
         description:
-            "Si aún no sabes qué vendes ni a quién, el marketing no resolverá tu problema de negocio.",
+            "No compartes métricas o no sabes cuánto facturas. Sin números, no podemos optimizar.",
     },
 ];
 ---
@@ -64,15 +64,16 @@ const isNotFor = [
         <h2
             class="reveal font-display text-5xl md:text-7xl font-black mb-6 leading-tight text-white"
         >
-            No aceptamos a cualquiera.<br />
-            <span class="text-zinc-500">Solo a los mejores.</span>
+            No trabajamos con cualquiera.<br />
+            <span class="text-zinc-500"
+                >Solo con negocios que ya generan dinero.</span
+            >
         </h2>
         <p
             class="reveal text-lg md:text-xl text-zinc-500 font-light max-w-2xl mx-auto"
         >
-            Somos una boutique de crecimiento de alto ROI. Buscamos socios, no
-            clientes. Identifica si encajas con nuestra metodología antes de
-            aplicar.
+            Solo aceptamos proyectos donde podemos garantizar impacto.
+            Identifica si encajas con nuestra metodología antes de aplicar.
         </p>
     </header>
 
@@ -96,15 +97,13 @@ const isNotFor = [
                     ></span>
                     <span
                         class="text-[10px] font-bold uppercase tracking-[0.3em]"
-                        >Apto para Escalar</span
+                        >Trabajamos Contigo Si</span
                     >
                 </div>
                 <h3
                     class="reveal font-display text-4xl md:text-5xl font-black mb-12 tracking-tight"
                 >
-                    Para quién <br /><span class="text-white/40"
-                        >es In Agencia.</span
-                    >
+                    Perfil <br /><span class="text-white/40">Ideal</span>
                 </h3>
                 <ul class="space-y-8 max-w-md">
                     {
@@ -132,7 +131,7 @@ const isNotFor = [
                     href="/contacto"
                     class="reveal mt-16 group inline-flex items-center gap-4 text-lg font-black uppercase tracking-tighter border-b-2 border-white pb-2 hover:gap-6 transition-all"
                 >
-                    Califico para empezar <span
+                    Califico - Agendar auditoría <span
                         class="material-symbols-outlined">arrow_forward</span
                     >
                 </a>
@@ -155,13 +154,13 @@ const isNotFor = [
                     <span class="w-2 h-2 rounded-full bg-red-500"></span>
                     <span
                         class="text-[10px] font-bold uppercase tracking-[0.3em] opacity-60"
-                        >No somos compatibles</span
+                        >NO Trabajamos Contigo Si</span
                     >
                 </div>
                 <h3
                     class="reveal font-display text-4xl md:text-5xl font-black mb-12 tracking-tight"
                 >
-                    Para quién <span class="text-zinc-500">no somos.</span>
+                    Anti <span class="text-zinc-500">Cliente</span>
                 </h3>
                 <ul class="space-y-8 max-w-md">
                     {
@@ -186,8 +185,8 @@ const isNotFor = [
                     }
                 </ul>
                 <p class="reveal mt-16 text-zinc-500 italic font-light">
-                    * Si te identificas con alguno de estos puntos, te deseamos
-                    lo mejor, pero no somos la agencia que buscas.
+                    * Hemos rechazado prospectos que ofrecían pagar, simplemente
+                    porque su setup no permitía escalar.
                 </p>
             </div>
         </section>

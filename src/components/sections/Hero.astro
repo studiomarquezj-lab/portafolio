@@ -1,15 +1,5 @@
 ---
-import Button from "../ui/Button.astro";
 
-interface Props {
-    title: string;
-    subtitle: string;
-    ctaText: string;
-    ctaHref: string;
-}
-
-const { title, subtitle, ctaText, ctaHref } = Astro.props;
-const words = title.split(" ");
 ---
 
 <section
@@ -77,23 +67,15 @@ const words = title.split(" ");
                     ></span>
                     <span
                         class="text-[9px] font-bold tracking-[0.4em] uppercase opacity-70"
-                        >Marketing Boutique de Élite</span
+                        >Performance Marketing Sin Humo</span
                     >
                 </div>
 
                 <!-- Main Headline (Mercury text style) -->
                 <h1
-                    class="reveal text-6xl md:text-8xl xl:text-[110px] font-extrabold leading-[0.85] tracking-tighter mb-10 mercury-text"
+                    class="reveal text-5xl md:text-7xl xl:text-[80px] font-extrabold leading-[1] tracking-tighter mb-10 mercury-text"
                 >
-                    {words.slice(0, 2).join(" ")}
-                    <br />
-                    <span
-                        class="font-serif-elite italic font-normal lowercase tracking-normal px-2"
-                        >{words[2] || ""}</span
-                    >
-                    {words.slice(3, 5).join(" ")}
-                    <br />
-                    <span class="text-white">{words.slice(5).join(" ")}</span>
+                    ¿Cuántos de tus <br /> leads realmente <br /> contestan el teléfono?
                 </h1>
 
                 <div
@@ -103,14 +85,16 @@ const words = title.split(" ");
                         <p
                             class="reveal text-lg md:text-xl text-zinc-400 font-light leading-relaxed mb-8"
                         >
-                            {subtitle}
+                            He generado 4,166 leads calificados para seguros USA
+                            y reducido costos por venta 30% en e-commerce B2B.
+                            Si facturas menos de $5k/mes, aún no somos para ti.
                         </p>
                         <div class="reveal flex flex-wrap gap-6">
                             <a
-                                href={ctaHref}
+                                href="/contacto"
                                 class="cta-elite-glow px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] flex items-center gap-4"
                             >
-                                {ctaText}
+                                Auditar mis campañas gratis
                                 <span class="material-symbols-outlined text-lg"
                                     >arrow_outward</span
                                 >
@@ -119,7 +103,7 @@ const words = title.split(" ");
                                 href="#proceso"
                                 class="px-10 py-5 rounded-full text-xs font-bold uppercase tracking-[0.2em] ultra-thin-border hover:bg-white/5 transition-all"
                             >
-                                Metodología
+                                Ver cómo trabajo
                             </a>
                         </div>
                     </div>
@@ -130,22 +114,32 @@ const words = title.split(" ");
                     >
                         <div>
                             <div class="text-3xl font-bold tracking-tighter">
-                                8-12x
+                                30%
                             </div>
                             <div
                                 class="text-[8px] uppercase tracking-[0.3em] opacity-40 mt-1 font-bold"
                             >
-                                ROI Promedio
+                                Reducción Costos
                             </div>
                         </div>
                         <div>
                             <div class="text-3xl font-bold tracking-tighter">
-                                150<span class="text-sm">X</span>
+                                4,166
                             </div>
                             <div
                                 class="text-[8px] uppercase tracking-[0.3em] opacity-40 mt-1 font-bold"
                             >
-                                Mejor Caso
+                                Leads Generados
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold tracking-tighter">
+                                2000%
+                            </div>
+                            <div
+                                class="text-[8px] uppercase tracking-[0.3em] opacity-40 mt-1 font-bold"
+                            >
+                                ROAS Máximo
                             </div>
                         </div>
                     </div>
